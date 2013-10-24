@@ -152,58 +152,39 @@ h1, h2 {
   font-weight: 300;
 }
 
-/*h1 {
-  font-size:55px;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 28px;
-}
-@media (min-width: 544px){ 
-h1 {
-  font-size: 90px;	
-}
-
-h2 {
-  font-size: 38px;
-	margin:0;
-}
-
-}*/
-/* line 55, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 section {
   margin-bottom: 0;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 38, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 61, ../sass/_base.scss */
+/* line 41, ../sass/_base.scss */
 a:-webkit-any-link {
   text-decoration: none;
 }
 
-/* line 64, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 ul li {
   list-style: none;
 }
 
-/* line 75, ../sass/_base.scss */
+/* line 55, ../sass/_base.scss */
 section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 12px 0px inset;
 }
@@ -321,40 +302,50 @@ section {
 }
 
 /* line 12, ../sass/nav/_arrows.scss */
+.arrows.dark {
+  color: rgba(122, 121, 121, 0.5);
+}
+
+/* line 17, ../sass/nav/_arrows.scss */
+a.arrows.dark:hover {
+  color: #7a7979;
+}
+
+/* line 21, ../sass/nav/_arrows.scss */
 .down {
   bottom: 5px;
 }
 
-/* line 15, ../sass/nav/_arrows.scss */
+/* line 24, ../sass/nav/_arrows.scss */
 .up {
   top: 5px;
 }
 
-/* line 18, ../sass/nav/_arrows.scss */
+/* line 27, ../sass/nav/_arrows.scss */
 a.arrows:hover {
   color: #fff;
   border-bottom: none;
 }
 
 @media (min-width: 785px) {
-  /* line 25, ../sass/nav/_arrows.scss */
+  /* line 34, ../sass/nav/_arrows.scss */
   .arrows {
     font-size: 60px;
     width: 61px;
   }
 
-  /* line 29, ../sass/nav/_arrows.scss */
+  /* line 38, ../sass/nav/_arrows.scss */
   .down {
     bottom: 15px;
   }
 
-  /* line 32, ../sass/nav/_arrows.scss */
+  /* line 41, ../sass/nav/_arrows.scss */
   .up {
     top: 15px;
   }
 }
 @media (max-height: 700px) {
-  /* line 37, ../sass/nav/_arrows.scss */
+  /* line 46, ../sass/nav/_arrows.scss */
   .arrows {
     font-size: 40px;
     width: 41px;

@@ -9,6 +9,15 @@
 	width: 41px;
 	transition: all .25s;
 }
+.arrows.dark{
+	color: rgba(122, 121, 121, 0.5);
+}
+
+
+a.arrows.dark:hover {
+color: rgba(122, 121, 121, 1);
+
+}
 .down{
 	bottom:5px;
 }
