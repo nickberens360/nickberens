@@ -1,10 +1,14 @@
 .work{
 	background:#8D8A8A;
-	padding:100px 40px;
+	/*padding:100px 40px;*/
+}
+.work-grid{
+	padding-left: 40px;
+	padding-right: 40px;
 }
 @media (min-width: 785px){ 
 .work{
-	padding:0;
+	/*padding:0;*/
 }
 }
 
