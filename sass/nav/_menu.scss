@@ -1,0 +1,49 @@
+.menu-toggle{
+	z-index: 110;
+	text-align:left;
+	width:75px;
+	text-align:center;
+	font-size: 44px;
+	line-height:1.5;
+	cursor:pointer;
+	background: rgba(84, 145, 252, .9);
+	transition: all .25s;
+	padding: 20px 25px;
+}
+.menu-toggle:hover{
+	background: rgba(84, 145, 252, 1);
+}
+.menu-toggle span{
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	display: block;
+	width: 100%;
+margin-bottom: 5px;
+}
+.menu-container{
+	position:fixed;
+	z-index: 500;
+	width: 75px;
+	text-align: center;
+	
+}
+.menu{
+	display:none;
+}
+.menu [class*="icons"]{
+	display:block;
+}
+.menu ul li{
+	margin-bottom:1px;
+}
+.menu a{
+	display:block;
+	padding:20px 0;
+	background:rgba(255, 255, 255, 1);
+	color:black;
+	transition: color .2s;
+	-webkit-transition: color .2s;
+}
+.menu a:hover{
+	color:rgba(84, 145, 252, 1);
+}
+/*ul,ol{padding:0;margin:0 0 10px 25px;}*/
