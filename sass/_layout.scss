@@ -1,0 +1,28 @@
+.wrap{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+@media (min-width: 1018px) {
+.wrap{
+	width:1000px;
+}
+}
+
+
+.size{
+	display:table;
+	width:100%;
+	overflow: hidden;
+	position:relative;
+	height:100%;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
