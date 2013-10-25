@@ -144,7 +144,7 @@
 				<li>CSS3, </li>
 				<li>jQuery</li>
 			</ul>
-			<a href="http://nickberens.me/browser-test/" class="btns" target="_blank">Visit Site</a> </div>
+			<a href="http://nickberens360.github.io/browser-test/" class="btns" target="_blank">Visit Site</a> </div>
 	</div>
 </article>
 
