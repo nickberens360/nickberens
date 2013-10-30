@@ -750,10 +750,11 @@ input[type="submit"].btns:active {
 /* line 1, ../sass/layout/_work.scss */
 .work {
   background: #8D8A8A;
+  background-image: url(../img/grey_wash_wall.png);
   /*padding:100px 40px;*/
 }
 
-/* line 5, ../sass/layout/_work.scss */
+/* line 6, ../sass/layout/_work.scss */
 .work-grid {
   padding-left: 40px;
   padding-right: 40px;
@@ -762,7 +763,7 @@ input[type="submit"].btns:active {
 }
 
 @media (max-height: 700px) {
-  /* line 12, ../sass/layout/_work.scss */
+  /* line 13, ../sass/layout/_work.scss */
   .work-grid {
     padding-top: 0;
     padding-bottom: 0;
@@ -792,6 +793,7 @@ input[type="submit"].btns:active {
 /* line 1, ../sass/layout/_contact.scss */
 .contact {
   background: #333;
+  background-image: url(../img/dark_fish_skin.png);
 }
 
 /* line 1, ../sass/layout/_blog.scss */
