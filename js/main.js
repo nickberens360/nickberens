@@ -52,39 +52,45 @@ var fifth = $('#fifth');
 var sixth = $('#sixth');*/
 
 $('#one').click(function(){ 
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #first"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#two').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #second"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#three').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #third"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#four').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #fourth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#five').click(function(){	
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #fifth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#six').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #sixth");
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 
