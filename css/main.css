@@ -152,58 +152,49 @@ h1, h2 {
   font-weight: 300;
 }
 
-/*h1 {
-  font-size:55px;
-  font-weight: normal;
+/* line 38, ../sass/_base.scss */
+.mas {
+  display: table !important;
 }
 
-h2 {
-  font-size: 28px;
-}
-@media (min-width: 544px){ 
-h1 {
-  font-size: 90px;	
+/* line 41, ../sass/_base.scss */
+.no-mas {
+  display: none !important;
 }
 
-h2 {
-  font-size: 38px;
-	margin:0;
-}
-
-}*/
-/* line 55, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 section {
   margin-bottom: 0;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 61, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 a:-webkit-any-link {
   text-decoration: none;
 }
 
-/* line 64, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 72, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 ul li {
   list-style: none;
 }
 
-/* line 75, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
 section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 12px 0px inset;
 }
