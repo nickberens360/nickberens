@@ -92,17 +92,18 @@ $('#six').click(function(){
 
 //Closes overlay
 $('#details .clse').click(function(){
-	//details.slideToggle('fast');
+	details.slideToggle('fast');
 	details.css('display','none');
 	$('#first, #second, #third, #fourth, #fifth, #sixth').hide();
 });
 
 
-$(window).scroll(function() {
+/*$(window).scroll(function() {
   details.css('display','none');
 
 	
 });
+*/
 
 
 
