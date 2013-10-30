@@ -765,6 +765,7 @@ input[type="submit"].btns:active {
 @media (max-height: 700px) {
   /* line 13, ../sass/layout/_work.scss */
   .work-grid {
+    margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
