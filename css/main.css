@@ -283,15 +283,16 @@ section {
 
 /* line 38, ../sass/nav/_menu.scss */
 .menu a {
+  font-size: 20px;
   display: block;
   padding: 20px 0;
   background: white;
-  color: black;
+  color: #686868;
   transition: color .2s;
   -webkit-transition: color .2s;
 }
 
-/* line 46, ../sass/nav/_menu.scss */
+/* line 47, ../sass/nav/_menu.scss */
 .menu a:hover {
   color: #5491fc;
 }

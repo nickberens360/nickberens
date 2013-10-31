@@ -52,42 +52,45 @@ var fifth = $('#fifth');
 var sixth = $('#sixth');*/
 
 $('#one').click(function(){ 
-	 
+	
 	details.css('display','table');
-	/*details.removeClass('no-mas');
-	details.addClass('mas');*/
 	cases.load("ajax/case.txt #first"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#two').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #second"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#three').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #third"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#four').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #fourth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#five').click(function(){	
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #fifth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#six').click(function(){
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #sixth");
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 
@@ -97,22 +100,16 @@ $('#six').click(function(){
 $('#details .clse').click(function(){
 	details.slideToggle('fast');
 	details.css('display','none');
-	/*details.removeClass('mas');
-	details.addClass('no-mas');*/
 	$('#first, #second, #third, #fourth, #fifth, #sixth').hide();
 });
 
 
-/*if ($('#details').hasClass('mas')) {
-	$(window).scroll(function() {
-		details.removeClass('mas');
-  	details.addClass('no-mas');
-	});
-}*/
-
 /*$(window).scroll(function() {
   details.css('display','none');
-});*/
+
+	
+});
+*/
 
 
 
