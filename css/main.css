@@ -445,7 +445,7 @@ input[type="submit"].btns {
 
 /* line 33, ../sass/modules/_btns.scss */
 input[type="submit"].btns:active {
-  top: 4px;
+  margin-top: 20px;
   border-bottom: 4px solid #3D7E59;
   background: #51a877;
 }

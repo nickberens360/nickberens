@@ -1,1 +1,0 @@
-!function(e){e.fn.fitText=function(n,r){var i=n||1,s=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},r);return this.each(function(){var n=e(this),r=function(){n.css("font-size",Math.max(Math.min(n.width()/(10*i),parseFloat(s.maxFontSize)),parseFloat(s.minFontSize)))};r(),e(window).on("resize",r)})}}(jQuery);
