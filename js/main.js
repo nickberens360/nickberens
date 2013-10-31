@@ -52,9 +52,12 @@ var fifth = $('#fifth');
 var sixth = $('#sixth');*/
 
 $('#one').click(function(){ 
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+	 
 	details.css('display','table');
+	/*details.removeClass('no-mas');
+	details.addClass('mas');*/
 	cases.load("ajax/case.txt #first"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#two').click(function(){
@@ -92,17 +95,24 @@ $('#six').click(function(){
 
 //Closes overlay
 $('#details .clse').click(function(){
-	//details.slideToggle('fast');
+	details.slideToggle('fast');
 	details.css('display','none');
+	/*details.removeClass('mas');
+	details.addClass('no-mas');*/
 	$('#first, #second, #third, #fourth, #fifth, #sixth').hide();
 });
 
 
-$(window).scroll(function() {
-  details.css('display','none');
+/*if ($('#details').hasClass('mas')) {
+	$(window).scroll(function() {
+		details.removeClass('mas');
+  	details.addClass('no-mas');
+	});
+}*/
 
-	
-});
+/*$(window).scroll(function() {
+  details.css('display','none');
+});*/
 
 
 
