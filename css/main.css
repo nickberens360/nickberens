@@ -426,6 +426,11 @@ a.arrows:hover {
 }
 
 /* line 17, ../sass/modules/_btns.scss */
+#submit {
+  cursor: pointer;
+}
+
+/* line 20, ../sass/modules/_btns.scss */
 input[type="submit"].btns {
   position: relative;
   background: #49976B;
@@ -433,14 +438,14 @@ input[type="submit"].btns {
   color: #fff;
   display: block;
   margin: auto;
-  padding: 10px 0;
+  padding: 15px 0;
   width: 100%;
   border-bottom: 8px solid #3D7E59;
 }
 
-/* line 29, ../sass/modules/_btns.scss */
+/* line 33, ../sass/modules/_btns.scss */
 input[type="submit"].btns:active {
-  margin-top: 14px;
+  top: 4px;
   border-bottom: 4px solid #3D7E59;
   background: #51a877;
 }
