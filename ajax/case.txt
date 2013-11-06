@@ -20,7 +20,114 @@
 </article>
 
 
+
 <article id="second" class="case wrap">
+	<div class="grid-row">
+		<div class="colspan-6">
+			<div class="thumb"> <img src="http://placehold.it/509x365"> </div>
+		</div>
+		<div class="colspan-6">
+			<h1>Example Title</h1>
+			<div class="summary">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+			<ul class="skills">
+				<li>HTML5, </li>
+				<li>Responsive, </li>
+				<li>CSS3, </li>
+				<li>Wordpress, </li>
+				<li>jQuery</li>
+			</ul>
+			<a href="#"  class="btns">Visit Site</a> </div>
+	</div>
+</article>
+
+<article id="third" class="case wrap">
+	<div class="grid-row">
+		<div class="colspan-6">
+			<div class="thumb"> <img src="http://placehold.it/509x365"> </div>
+		</div>
+		<div class="colspan-6">
+			<h1>Example Title</h1>
+			<div class="summary">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+			<ul class="skills">
+				<li>HTML5, </li>
+				<li>Responsive, </li>
+				<li>CSS3, </li>
+				<li>Wordpress, </li>
+				<li>jQuery</li>
+			</ul>
+			<a href="#" class="btns">Visit Site</a> </div>
+	</div>
+</article>
+
+<article id="fourth" class="case wrap">
+	<div class="grid-row">
+		<div class="colspan-6">
+			<div class="thumb"> <img src="http://placehold.it/509x365"> </div>
+		</div>
+		<div class="colspan-6">
+			<h1>Example Title</h1>
+			<div class="summary">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+			<ul class="skills">
+				<li>HTML5, </li>
+				<li>Responsive, </li>
+				<li>CSS3, </li>
+				<li>Wordpress, </li>
+				<li>jQuery</li>
+			</ul>
+			<a href="#" class="btns">Visit Site</a> </div>
+	</div>
+</article>
+
+<article id="fifth" class="case wrap">
+	<div class="grid-row">
+		<div class="colspan-6">
+			<div class="thumb"> <img src="http://placehold.it/509x365"> </div>
+		</div>
+		<div class="colspan-6">
+			<h1>Example Title</h1>
+			<div class="summary">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+			<ul class="skills">
+				<li>HTML5, </li>
+				<li>Responsive, </li>
+				<li>CSS3, </li>
+				<li>Wordpress, </li>
+				<li>jQuery</li>
+			</ul>
+			<a href="#" class="btns">Visit Site</a> </div>
+	</div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article id="" class="case wrap">
 	<div class="grid-row">
 		<div class="colspan-6">
 			<div class="thumb"> <img src="img/clickinrich.jpg"> </div>
@@ -33,7 +140,7 @@
 			<ul class="skills">
 				<li>Design</li>
 			</ul>
-			<a href="http://nickberens.me/clickinrich/" class="btns" target="_blank">View Design</a> </div>
+			<a href="#" class="btns" target="_blank">View Design</a> </div>
 	</div>
 </article>
 
@@ -64,7 +171,7 @@
 	</div>
 </article>
 
-<article id="fourth" class="case wrap">
+<article id="" class="case wrap">
 	<div class="grid-row">
 		<div class="colspan-6">
 			<div class="thumb"> <img src="img/wisnetlabs.jpg"> </div>
@@ -77,11 +184,11 @@
 			<ul class="skills">
 				<li>Design</li>
 			</ul>
-			<a href="../wisnetlabs/index.html" class="btns" target="_blank">View Design</a> </div>
+			<a href="#" class="btns" target="_blank">View Design</a> </div>
 	</div>
 </article>
 
-<article id="fifth" class="case wrap">
+<article id="" class="case wrap">
 	<div class="grid-row">
 		<div class="colspan-6">
 			<div class="thumb"> <img src="img/budget.jpg"> </div>
@@ -94,11 +201,11 @@
 			<ul class="skills">
 				<li>Design</li>
 			</ul>
-			<a href="../budget/index.html" class="btns" target="_blank">View Design</a> </div>
+			<a href="#" class="btns" target="_blank">View Design</a> </div>
 	</div>
 </article>
 
-<article id="third" class="case wrap">
+<article id="" class="case wrap">
 	<div class="grid-row">
 		<div class="colspan-6">
 			<div class="thumb"> <img src="img/metro.jpg"> </div>
@@ -113,7 +220,7 @@
 				<li>Responsive, </li>
 				<li>CSS3</li>
 			</ul>
-			<a href="../metro-blog2/index.html" class="btns" target="_blank">Visit Site</a> </div>
+			<a href="#" class="btns" target="_blank">Visit Site</a> </div>
 	</div>
 </article>
 
@@ -144,7 +251,7 @@
 				<li>CSS3, </li>
 				<li>jQuery</li>
 			</ul>
-			<a href="http://nickberens.me/browser-test/" class="btns" target="_blank">Visit Site</a> </div>
+			<a href="http://nickberens360.github.io/browser-test/" class="btns" target="_blank">Visit Site</a> </div>
 	</div>
 </article>
 

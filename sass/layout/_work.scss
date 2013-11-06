@@ -1,14 +1,19 @@
 .work{
 	background:#8D8A8A;
+	background-image: url(../img/grey_wash_wall.png);
 	/*padding:100px 40px;*/
 }
 .work-grid{
 	padding-left: 40px;
 	padding-right: 40px;
+	margin-top: 100px;
+	padding-bottom:100px;
 }
-@media (min-width: 785px){ 
-.work{
-	/*padding:0;*/
-}
+@media (max-height: 700px){
+	.work-grid{
+		margin-top:0;
+		padding-top:0;
+		padding-bottom:0;
+	}
 }
 

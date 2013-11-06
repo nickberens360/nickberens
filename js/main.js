@@ -11,23 +11,6 @@ $(window).resize(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Menu toggle
 $('.menu-toggle').click(function(){
 	$('.menu').slideToggle('fast');
@@ -68,91 +51,66 @@ var fourth = $('#fourth');
 var fifth = $('#fifth');
 var sixth = $('#sixth');*/
 
-$('#one').click(function(){
+$('#one').click(function(){ 
+	
 	details.css('display','table');
 	cases.load("ajax/case.txt #first"); 
-  $('html, body').animate({scrollTop: details.offset().top}, .5); 
-});
-
-$('#two').click(function(){
-	details.css('display','table');
-	cases.load("ajax/case.txt #second"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5);  
-});
-
-$('#three').click(function(){
-	details.css('display','table');
-	cases.load("ajax/case.txt #third");
-	$('html, body').animate({scrollTop: details.offset().top}, .5);   
-});
-
-$('#four').click(function(){
-	details.css('display','table');
-	cases.load("ajax/case.txt #fourth"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5);  
-});
-
-$('#five').click(function(){	
-	details.css('display','table');
-	cases.load("ajax/case.txt #fifth");
 	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
-$('#six').click(function(){
-	details.css('display','table');
-	cases.load("ajax/case.txt #sixth");
-	$('html, body').animate({scrollTop: details.offset().top}, .5);   
-});
-
-
-
-/*$('#one').click(function(){
-	details.slideToggle('fast');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#first').show();
-  $('#second, #third, #fourth, #fifth, #sixth').hide();    
-});
-
 $('#two').click(function(){
-	details.slideToggle('fast');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#second').show();
-  $('#first, #third, #fourth, #fifth, #sixth').hide();    
+	
+	details.css('display','table');
+	cases.load("ajax/case.txt #second"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#three').click(function(){
-	details.slideToggle('fast');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#third').show();
-  $('#first, #second, #fourth, #fifth, #sixth').hide();    
+	
+	details.css('display','table');
+	cases.load("ajax/case.txt #third"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
 
 $('#four').click(function(){
-	details.slideToggle('fast');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#fourth').show();
-  $('#first, #second, #third, #fifth, #sixth').hide();    
+	
+	details.css('display','table');
+	cases.load("ajax/case.txt #fourth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
-$('#five').click(function(){
-	details.slideToggle('fast');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#fifth').show();
-  $('#first, #second, #third, #fourth, #sixth').hide();    
+$('#five').click(function(){	
+	
+	details.css('display','table');
+	cases.load("ajax/case.txt #fifth"); 
+	$('html, body').animate({scrollTop: details.offset().top}, .5);
 });
 
 $('#six').click(function(){
+	
 	details.css('display','table');
-	$('html, body').animate({scrollTop: $("#work").offset().top}, .5);
-	$('#sixth').show();
-  $('#first, #second, #third, #fourth, #fifth').hide();    
-});*/
+	cases.load("ajax/case.txt #sixth");
+	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+});
+
+
+
 
 //Closes overlay
 $('#details .clse').click(function(){
-	//details.slideToggle('fast');
+	details.slideToggle('fast');
 	details.css('display','none');
 	$('#first, #second, #third, #fourth, #fifth, #sixth').hide();
 });
+
+
+/*$(window).scroll(function() {
+  details.css('display','none');
+
+	
+});
+*/
+
+
 
 });
