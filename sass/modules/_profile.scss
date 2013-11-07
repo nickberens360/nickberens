@@ -3,7 +3,8 @@
 	max-width:100%;
 }
 .profile p {
-  margin: auto;
+  margin-left: auto;
+	margin-right: auto;
 }
 .profile a {
 font-weight: bold;
@@ -12,16 +13,19 @@ border-bottom: 2px dotted #fff;
 }
 .profile p {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 	line-height:1.5;
+	text-align:justify;
 }
 @media (min-width: 544px){
+.profile.wrap{
+	width:400px;
+	position:relative;
+	top: -43px;
+}
 .profile img{
 	margin-bottom: 20px;
 	max-width:100%;
 }
-.profile p {
-  font-size: 36px;
-}	
 }
 

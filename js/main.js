@@ -20,6 +20,15 @@ $('.menu li a').click(function(){
 	$('.menu').slideToggle('fast');
 });
 
+//Toggle about me info
+$('.about .btns').click(function(){
+	$('.more').slideToggle('fast');
+	$('.about').toggleClass('pad-bottom');
+	$('.profile.wrap').toggleClass('top');
+	$('.about .btns').text('Less About Me');
+});
+
+
 //Smooth scroll
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 

@@ -162,39 +162,44 @@ h1, h2 {
   display: none !important;
 }
 
-/* line 48, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
+p.intro {
+  font-weight: normal;
+}
+
+/* line 50, ../sass/_base.scss */
 section {
   margin-bottom: 0;
 }
 
-/* line 51, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 a:-webkit-any-link {
   text-decoration: none;
 }
 
-/* line 57, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 61, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 65, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 ul li {
   list-style: none;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 12px 0px inset;
 }
@@ -443,11 +448,36 @@ input[type="submit"].btns {
   border-bottom: 8px solid #3D7E59;
 }
 
-/* line 33, ../sass/modules/_btns.scss */
+/* line 32, ../sass/modules/_btns.scss */
 input[type="submit"].btns:active {
   margin-top: 20px;
   border-bottom: 4px solid #3D7E59;
   background: #51a877;
+}
+
+/* line 38, ../sass/modules/_btns.scss */
+.about a.btns {
+  position: absolute;
+  bottom: -85px;
+  background: #fff;
+  border: none;
+  color: #979797;
+  display: block;
+  margin: auto;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 8px solid #D9D9D9;
+  font-weight: normal;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 55, ../sass/modules/_btns.scss */
+.about a.btns:active {
+  margin-top: 20px;
+  border-bottom: 4px solid #D9D9D9;
 }
 
 /* line 1, ../sass/modules/_profile.scss */
@@ -458,33 +488,37 @@ input[type="submit"].btns:active {
 
 /* line 5, ../sass/modules/_profile.scss */
 .profile p {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 8, ../sass/modules/_profile.scss */
+/* line 9, ../sass/modules/_profile.scss */
 .profile a {
   font-weight: bold;
   color: #fff;
   border-bottom: 2px dotted #fff;
 }
 
-/* line 13, ../sass/modules/_profile.scss */
+/* line 14, ../sass/modules/_profile.scss */
 .profile p {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 @media (min-width: 544px) {
-  /* line 19, ../sass/modules/_profile.scss */
+  /* line 21, ../sass/modules/_profile.scss */
+  .profile.wrap {
+    width: 400px;
+    position: relative;
+    top: -43px;
+  }
+
+  /* line 26, ../sass/modules/_profile.scss */
   .profile img {
     margin-bottom: 20px;
     max-width: 100%;
-  }
-
-  /* line 23, ../sass/modules/_profile.scss */
-  .profile p {
-    font-size: 36px;
   }
 }
 /* line 1, ../sass/modules/_work-grid.scss */
@@ -630,6 +664,21 @@ input[type="submit"].btns:active {
     font-size: 157px;
   }
 }
+/* line 1, ../sass/modules/_more.scss */
+.more {
+  display: none;
+}
+
+/* line 4, ../sass/modules/_more.scss */
+.pad-bottom {
+  padding-bottom: 207px !important;
+}
+
+/* line 7, ../sass/modules/_more.scss */
+.top {
+  top: 0 !important;
+}
+
 /* line 3, ../sass/layout/_grid.scss */
 [class*='colspan-'] {
   float: none;
@@ -742,6 +791,7 @@ input[type="submit"].btns:active {
 /* line 1, ../sass/layout/_about.scss */
 .about {
   background: rgba(43, 164, 245, 0.46);
+  padding: 116px 0;
 }
 
 /* line 1, ../sass/layout/_work.scss */
