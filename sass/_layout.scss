@@ -25,4 +25,8 @@
 	margin: 0 auto;
 	text-align: center;
 }
-
+@media (min-width: 518px) {
+.single .wrap{
+	width:500px;
+}
+}
