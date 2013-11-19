@@ -106,7 +106,7 @@ require_once 'inc/login.inc.php';
             echo '<tr>
                     <td>' . $entry->{'spent-at'} . '</td>
                     <td>' . $myProjects[(int)$entry->{'project-id'}] . '</td>
-                    <td class="hours">' . number_format(round((float)$entry->{'hours'} * 60 / 15) * 0.25, 2) . '</td>
+                    <td class="hours">' . number_format((float)$entry->{'hours'}, 2)  . '</td>
                     <td>' . ($entry->{'is-billed'} == 'true' ? __('yes') : __('no')) . '</td>
                     <td>' . $entry->{'notes'} . '</td>
                 </tr>';
@@ -149,7 +149,7 @@ require_once 'inc/login.inc.php';
             echo '<tr>
                     <td>' . $entry->{'spent-at'} . '</td>
                     <td>' . $myProjects[(int)$entry->{'project-id'}] . '</td>
-                    <td class="hours">' . number_format(ceil( (float)$entry->{'hours'} * 60 / 15) * 0.25, 2) . '</td>
+                    <td class="hours">' . number_format((float)$entry->{'hours'}, 2)  . '</td>
                     <td>' . $entry->{'notes'} . '</td>
                 </tr>';
         }
@@ -163,5 +163,11 @@ require_once 'inc/login.inc.php';
     ?>
 </table>
 </div>
+<script>
+$(document).ready(function()
+{
+  $("tr:odd").css("background-color", "#FFF3B8");
+});
+</script>
 </body>
 </html>
