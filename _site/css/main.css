@@ -812,6 +812,16 @@ input[type="submit"].btns:active {
 }
 
 /* line 1, ../sass/layout/_single.scss */
+.single article {
+  text-align: left;
+}
+
+/* line 4, ../sass/layout/_single.scss */
+.single article h1 {
+  text-align: center;
+}
+
+/* line 7, ../sass/layout/_single.scss */
 .single article p {
   text-align: justify;
 }
