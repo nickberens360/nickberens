@@ -638,18 +638,22 @@ input[type="submit"].btns:active {
 .article-index.wrap {
   width: 500px;
   text-align: left;
+}
+
+/* line 9, ../sass/modules/_article-index.scss */
+.article-roll {
   background: #F8F8F8;
   padding: 20px 40px;
 }
 
-/* line 10, ../sass/modules/_article-index.scss */
+/* line 13, ../sass/modules/_article-index.scss */
 .blog h2 {
   font-size: 24px;
   margin: 0;
   text-align: left;
 }
 
-/* line 15, ../sass/modules/_article-index.scss */
+/* line 18, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
   font-size: 40px;
@@ -662,7 +666,7 @@ position: relative;
 top: -6px;
 font-size: 14px;
 }*/
-/* line 26, ../sass/modules/_article-index.scss */
+/* line 30, ../sass/modules/_article-index.scss */
 .post-date {
   color: #ccc;
   font-size: 13px;

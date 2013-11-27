@@ -3,10 +3,9 @@ layout: default
 title: Hello World Blog
 ---
 
-<ul class="article-index wrap">
+<ul class="article-roll">
     {% for post in site.posts %}
-      <li>
-        
+      <li>        
         <span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
      <!-- <a href="{{ post.url }}">{{ post.tags }}</a>-->
