@@ -6,10 +6,10 @@
   text-align: left;
 
 }
-.article-roll{
+/*.article-roll{
 	background: #F8F8F8;
 padding: 20px 40px;
-}
+}*/
 .blog h2{
   font-size: 24px;
   margin: 0;
@@ -19,14 +19,11 @@ padding: 20px 40px;
 	color: rgba(84, 145, 252, 0.9);
   font-size:40px;
 }
-/*.post-date{
-  color: #ccc;
-margin-top: -12px;
-position: relative;
-top: -6px;
-font-size: 14px;
-}*/
-
+.article-index li {
+	background: #F8F8F8;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
 .post-date{
   color: #ccc;
 font-size: 13px;
