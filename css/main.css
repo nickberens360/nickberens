@@ -653,7 +653,7 @@ padding: 20px 40px;
 /* line 18, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
-  font-size: 40px;
+  font-size: 19px;
 }
 
 /* line 22, ../sass/modules/_article-index.scss */
@@ -665,9 +665,11 @@ padding: 20px 40px;
 
 /* line 27, ../sass/modules/_article-index.scss */
 .post-date {
-  color: #ccc;
+  color: #666;
+  padding: 5px 10px;
+  background: #ccc;
   font-size: 13px;
-  margin-right: 10px;
+  float: right;
 }
 
 /* line 1, ../sass/modules/_pen.scss */
