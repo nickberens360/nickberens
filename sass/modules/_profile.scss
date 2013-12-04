@@ -1,27 +1,30 @@
 .profile img{
 	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 	max-width:100%;
 }
 .profile p {
-  margin: auto;
+  color: white;
+  font-size: 20px;
+	font-size: 1.25rem;
+	line-height:1.5; 
+	margin: auto;
 }
 .profile a {
 font-weight: bold;
 color: #fff;
 border-bottom: 2px dotted #fff;
 }
-.profile p {
-  color: white;
-  font-size: 20px;
-	line-height:1.5;
-}
+
 @media (min-width: 544px){
 .profile img{
 	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 	max-width:100%;
 }
 .profile p {
   font-size: 36px;
+	font-size: 2.25rem;
 }	
 }
 
