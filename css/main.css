@@ -440,7 +440,6 @@ input[type="submit"].btns:active {
 /* line 1, ../sass/modules/_profile.scss */
 .profile img {
   margin-bottom: 10px;
-  margin-bottom: 1rem;
   max-width: 100%;
 }
 
@@ -448,7 +447,6 @@ input[type="submit"].btns:active {
 .profile p {
   color: white;
   font-size: 20px;
-  font-size: 2rem;
   line-height: 1.5;
   margin: auto;
 }
@@ -464,14 +462,12 @@ input[type="submit"].btns:active {
   /* line 20, ../sass/modules/_profile.scss */
   .profile img {
     margin-bottom: 20px;
-    margin-bottom: 2rem;
     max-width: 100%;
   }
 
   /* line 25, ../sass/modules/_profile.scss */
   .profile p {
     font-size: 36px;
-    font-size: 3.6rem;
   }
 }
 /* line 1, ../sass/modules/_work-grid.scss */
