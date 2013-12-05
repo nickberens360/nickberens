@@ -13,6 +13,10 @@ h1, h2 {
   font-weight: 300;
 }
 
-/*Scoped*/
+@media (min-width: 618px){ 
+html{
+	 font-size:80.5%;
+}
+}
 
 
