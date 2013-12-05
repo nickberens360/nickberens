@@ -616,37 +616,36 @@ input[type="submit"].btns:active {
 /*.article-index{
   text-align:left !important;
 }*/
-/* line 4, ../sass/modules/_article-index.scss */
-.article-index.wrap {
-  width: 700px;
-  text-align: left;
-}
-
 /*.article-roll{
 	background: #F8F8F8;
 padding: 20px 40px;
 }*/
-/* line 13, ../sass/modules/_article-index.scss */
+/* line 9, ../sass/modules/_article-index.scss */
+.article-roll {
+  text-align: left;
+}
+
+/* line 12, ../sass/modules/_article-index.scss */
 .blog h2 {
   font-size: 24px;
   margin: 0;
   text-align: left;
 }
 
-/* line 18, ../sass/modules/_article-index.scss */
+/* line 17, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
   font-size: 19px;
 }
 
-/* line 22, ../sass/modules/_article-index.scss */
+/* line 21, ../sass/modules/_article-index.scss */
 .article-index li {
   background: #F8F8F8;
   margin-bottom: 5px;
   padding-left: 10px;
 }
 
-/* line 27, ../sass/modules/_article-index.scss */
+/* line 26, ../sass/modules/_article-index.scss */
 .post-date {
   color: #666;
   padding: 5px 10px;
@@ -655,12 +654,18 @@ padding: 20px 40px;
   float: right;
 }
 
+@media (min-width: 718px) {
+  /* line 34, ../sass/modules/_article-index.scss */
+  .article-index.wrap {
+    width: 700px;
+  }
+}
 /* line 1, ../sass/modules/_pen.scss */
 .pen {
   box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 16px 7px;
   background: #636363;
-  margin-top: 40px;
-  margin-top: 4rem;
+  margin: 40px 0;
+  margin: 4rem 0;
 }
 
 /* line 3, ../sass/layout/_grid.scss */
