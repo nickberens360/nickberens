@@ -843,6 +843,7 @@ padding: 20px 40px;
 /* line 1, ../sass/layout/_blog.scss */
 .blog {
   background: #E9E9E9;
+  background: url(../img/sos.png);
 }
 
 /* line 1, ../sass/layout/_single.scss */
