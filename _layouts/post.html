@@ -75,7 +75,7 @@ input[type='submit']
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
   <h1>{{page.title}}</h1>
-	{{ page.date | date: "%-d %B %Y" }}
+	<span class="single-date">{{ page.date | date: "%b %d, %Y" }}</span>
 	<article class="wrap">
 	{{content}}
 	</article>
