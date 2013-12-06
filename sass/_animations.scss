@@ -1,960 +1,7 @@
 @charset "UTF-8";
-/*@import "bootstrap";
-ul{
-	padding:0;
-	margin:0 0 10px 25px;
-}*/
-@font-face {
-  font-family: 'fonts3';
-  src: url("../fonts3/fonts/fonts3.eot");
-  src: url("../fonts3/fonts/fonts3.eot?#iefix") format("embedded-opentype"), url("../fonts3/fonts/fonts3.woff") format("woff"), url("../fonts3/fonts/fonts3.ttf") format("truetype"), url("../fonts3/fonts/fonts3.svg#fonts3") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 13, ../sass/_font.scss */
-[data-icon]:before {
-  font-family: 'fonts3';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icons-"] {
-*/
-/* line 30, ../sass/_font.scss */
-.icons-arrow-down, .icons-arrow-right, .icons-arrow-up, .icons-arrow-up-left, .icons-arrow-up-right, .icons-arrow-down-right, .icons-arrow-left, .icons-arrow-down-left, .icons-pencil, .icons-home, .icons-user, .icons-mail, .icons-briefcase {
-  font-family: 'fonts3';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* line 40, ../sass/_font.scss */
-.icons-arrow-down:before {
-  content: "\e000";
-}
-
-/* line 43, ../sass/_font.scss */
-.icons-arrow-right:before {
-  content: "\e001";
-}
-
-/* line 46, ../sass/_font.scss */
-.icons-arrow-up:before {
-  content: "\e002";
-}
-
-/* line 49, ../sass/_font.scss */
-.icons-arrow-up-left:before {
-  content: "\e003";
-}
-
-/* line 52, ../sass/_font.scss */
-.icons-arrow-up-right:before {
-  content: "\e004";
-}
-
-/* line 55, ../sass/_font.scss */
-.icons-arrow-down-right:before {
-  content: "\e005";
-}
-
-/* line 58, ../sass/_font.scss */
-.icons-arrow-left:before {
-  content: "\e006";
-}
-
-/* line 61, ../sass/_font.scss */
-.icons-arrow-down-left:before {
-  content: "\e007";
-}
-
-/* line 64, ../sass/_font.scss */
-.icons-pencil:before {
-  content: "\e008";
-}
-
-/* line 67, ../sass/_font.scss */
-.icons-home:before {
-  content: "\e009";
-}
-
-/* line 70, ../sass/_font.scss */
-.icons-user:before {
-  content: "\e00a";
-}
-
-/* line 73, ../sass/_font.scss */
-.icons-mail:before {
-  content: "\e00b";
-}
-
-/* line 76, ../sass/_font.scss */
-.icons-briefcase:before {
-  content: "\e00c";
-}
-
-/* line 1, ../sass/_base.scss */
-html {
-  height: 100%;
-  overflow-y: scroll;
-}
-
-/* line 5, ../sass/_base.scss */
-body {
-  background: url(../img/bg2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 15, ../sass/_base.scss */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media (max-width: 767px) {
-  /* line 19, ../sass/_base.scss */
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-/* line 26, ../sass/_base.scss */
-section {
-  margin-bottom: 0;
-}
-
-/* line 29, ../sass/_base.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 32, ../sass/_base.scss */
-a:-webkit-any-link {
-  text-decoration: none;
-}
-
-/* line 35, ../sass/_base.scss */
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* line 39, ../sass/_base.scss */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 43, ../sass/_base.scss */
-ul li {
-  list-style: none;
-}
-
-/* line 46, ../sass/_base.scss */
-section {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 12px 0px inset;
-}
-
-/* line 1, ../sass/_layout.scss */
-.wrap {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-@media (min-width: 1018px) {
-  /* line 8, ../sass/_layout.scss */
-  .wrap {
-    width: 1000px;
-  }
-}
-/* line 14, ../sass/_layout.scss */
-.size {
-  display: table;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-
-/* line 21, ../sass/_layout.scss */
-.cell {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* line 1, ../sass/nav/_menu.scss */
-.menu-toggle {
-  z-index: 110;
-  text-align: left;
-  width: 75px;
-  text-align: center;
-  font-size: 44px;
-  line-height: 1.5;
-  cursor: pointer;
-  background: rgba(84, 145, 252, 0.9);
-  transition: all .25s;
-  padding: 20px 25px;
-}
-
-/* line 13, ../sass/nav/_menu.scss */
-.menu-toggle:hover {
-  background: #5491fc;
-}
-
-/* line 16, ../sass/nav/_menu.scss */
-.menu-toggle span {
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  display: block;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-/* line 22, ../sass/nav/_menu.scss */
-.menu-container {
-  position: fixed;
-  z-index: 500;
-  width: 75px;
-  text-align: center;
-}
-
-/* line 28, ../sass/nav/_menu.scss */
-.menu {
-  display: none;
-}
-
-/* line 31, ../sass/nav/_menu.scss */
-.menu [class*="icons"] {
-  display: block;
-}
-
-/* line 34, ../sass/nav/_menu.scss */
-.menu ul li {
-  margin-bottom: 1px;
-}
-
-/* line 37, ../sass/nav/_menu.scss */
-.menu a {
-  font-size: 20px;
-  display: block;
-  padding: 20px 0;
-  background: white;
-  color: #3A3A3A;
-  transition: color .2s;
-  -webkit-transition: color .2s;
-}
-
-/* line 46, ../sass/nav/_menu.scss */
-.menu a:hover {
-  color: #5491fc;
-}
-
-/*ul,ol{padding:0;margin:0 0 10px 25px;}*/
-/* line 1, ../sass/nav/_arrows.scss */
-.arrows {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgba(255, 255, 255, 0.5);
-  /*#66544c*/
-  font-size: 40px;
-  width: 41px;
-  transition: all .25s;
-}
-
-/* line 12, ../sass/nav/_arrows.scss */
-.arrows.dark {
-  color: rgba(122, 121, 121, 0.5);
-}
-
-/* line 17, ../sass/nav/_arrows.scss */
-a.arrows.dark:hover {
-  color: #7a7979;
-}
-
-/* line 21, ../sass/nav/_arrows.scss */
-.down {
-  bottom: 5px;
-}
-
-/* line 24, ../sass/nav/_arrows.scss */
-.up {
-  top: 5px;
-}
-
-/* line 27, ../sass/nav/_arrows.scss */
-a.arrows:hover {
-  color: #fff;
-  border-bottom: none;
-}
-
-@media (min-width: 785px) {
-  /* line 34, ../sass/nav/_arrows.scss */
-  .arrows {
-    font-size: 60px;
-    width: 61px;
-  }
-
-  /* line 38, ../sass/nav/_arrows.scss */
-  .down {
-    bottom: 15px;
-  }
-
-  /* line 41, ../sass/nav/_arrows.scss */
-  .up {
-    top: 15px;
-  }
-}
-@media (max-height: 700px) {
-  /* line 46, ../sass/nav/_arrows.scss */
-  .arrows {
-    font-size: 40px;
-    width: 41px;
-  }
-}
-/* line 1, ../sass/testimonials/_test.scss */
-.test {
-  background: rgba(108, 37, 111, 0.75);
-}
-
-/* line 4, ../sass/testimonials/_test.scss */
-.test .cell {
-  text-align: left;
-}
-
-/* line 7, ../sass/testimonials/_test.scss */
-.test img {
-  float: left;
-  margin-right: 20px;
-}
-
-/* line 11, ../sass/testimonials/_test.scss */
-.test p {
-  color: #FFF;
-  font-size: 20px;
-  background: purple;
-  padding: 50px;
-}
-
-/* line 1, ../sass/modules/_billboard.scss */
-.billboard h1 {
-  font-size: 55px;
-  margin: 0;
-  line-height: .75;
-  font-weight: normal;
-}
-
-/* line 7, ../sass/modules/_billboard.scss */
-.billboard h2 {
-  font-size: 28px;
-  line-height: 1;
-}
-
-@media (min-width: 544px) {
-  /* line 13, ../sass/modules/_billboard.scss */
-  .billboard h1 {
-    font-size: 90px;
-  }
-
-  /* line 16, ../sass/modules/_billboard.scss */
-  .billboard h2 {
-    font-size: 38px;
-  }
-
-  /* line 19, ../sass/modules/_billboard.scss */
-  .billboard h1, .billboard h2 {
-    margin: 0;
-    line-height: 1;
-  }
-}
-/* line 1, ../sass/modules/_btns.scss */
-.clse {
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 41px;
-  color: white;
-  float: right;
-  border: 4px solid;
-  border-radius: 100px;
-  height: 55px;
-  width: 55px;
-  line-height: 1.1;
-  padding-left: 10px;
-  position: absolute;
-  right: 0;
-  top: -70px;
-}
-
-/* line 17, ../sass/modules/_btns.scss */
-#submit {
-  cursor: pointer;
-}
-
-/* line 20, ../sass/modules/_btns.scss */
-input[type="submit"].btns {
-  position: relative;
-  background: #49976B;
-  border: none;
-  color: #fff;
-  display: block;
-  margin: auto;
-  padding: 15px 0;
-  width: 100%;
-  border-bottom: 8px solid #3D7E59;
-}
-
-/* line 33, ../sass/modules/_btns.scss */
-input[type="submit"].btns:active {
-  margin-top: 20px;
-  border-bottom: 4px solid #3D7E59;
-  background: #51a877;
-}
-
-/* line 1, ../sass/modules/_profile.scss */
-.profile img {
-  margin-bottom: 10px;
-  max-width: 100%;
-}
-
-/* line 6, ../sass/modules/_profile.scss */
-.profile p {
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: auto;
-}
-
-/* line 13, ../sass/modules/_profile.scss */
-.profile a {
-  font-weight: bold;
-  color: #fff;
-  border-bottom: 2px dotted #fff;
-}
-
-@media (min-width: 544px) {
-  /* line 20, ../sass/modules/_profile.scss */
-  .profile img {
-    margin-bottom: 20px;
-    max-width: 100%;
-  }
-
-  /* line 25, ../sass/modules/_profile.scss */
-  .profile p {
-    font-size: 36px;
-  }
-}
-/* line 1, ../sass/modules/_work-grid.scss */
-.work-grid img {
-  width: 100%;
-}
-
-/* line 4, ../sass/modules/_work-grid.scss */
-.work-grid .colspan-4 {
-  cursor: pointer;
-}
-
-/* line 1, ../sass/modules/_case.scss */
-.case .thumb img {
-  display: none;
-  box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 22px 6px;
-  width: 100%;
-}
-
-/* line 6, ../sass/modules/_case.scss */
-.case h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  color: white;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-/* line 13, ../sass/modules/_case.scss */
-.case p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-/* line 17, ../sass/modules/_case.scss */
-.case p a {
-  color: white;
-  font-weight: bold;
-  border-bottom: 2px solid;
-}
-
-/* line 22, ../sass/modules/_case.scss */
-.case ul {
-  margin-bottom: 20px;
-}
-
-/* line 25, ../sass/modules/_case.scss */
-.case ul li {
-  display: inline;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* line 30, ../sass/modules/_case.scss */
-.case .btns {
-  background: #fff;
-  color: #FF2F2F;
-  font-weight: bold;
-  padding: 15px 20px;
-  display: inline-block;
-}
-
-@media (min-width: 767px) {
-  /* line 38, ../sass/modules/_case.scss */
-  .case .thumb img {
-    display: block;
-  }
-}
-/* line 43, ../sass/modules/_case.scss */
-.case .redesign li {
-  display: block;
-  margin-bottom: 13px;
-}
-
-/* line 47, ../sass/modules/_case.scss */
-.case .redesign li a {
-  color: #fff;
-  border-bottom: 2px solid;
-}
-
-/* line 1, ../sass/modules/_cntct-form.scss */
-.cntct-form h2 {
-  font-size: 75px;
-  line-height: 1;
-  margin: 0;
-}
-
-/* line 6, ../sass/modules/_cntct-form.scss */
-.cntct-form input[type="text"] {
-  height: 50px;
-  color: #fff;
-}
-
-/* line 10, ../sass/modules/_cntct-form.scss */
-.cntct-form textarea {
-  height: 100px;
-  color: #fff;
-}
-
-/* line 14, ../sass/modules/_cntct-form.scss */
-.cntct-form textarea, input[type="text"] {
-  border-radius: 0;
-  width: 100%;
-  padding: 10px;
-  background: #616161;
-  border: none;
-  margin-bottom: 0;
-}
-
-/* line 22, ../sass/modules/_cntct-form.scss */
-.cntct-form #ty {
-  display: none;
-  color: #61b284;
-}
-
-/* line 26, ../sass/modules/_cntct-form.scss */
-.cntct-form .error {
-  display: none;
-  padding: 10px;
-  margin: 0 0 5px 0;
-  color: #D8000C;
-  font-size: 12px;
-  background-color: #FFBABA;
-}
-
-/* line 34, ../sass/modules/_cntct-form.scss */
-.cntct-form .success {
-  display: none;
-  padding: 10px;
-  color: #044406;
-  font-size: 12px;
-  background-color: #B7FBB9;
-}
-
-@media (min-width: 518px) {
-  /* line 42, ../sass/modules/_cntct-form.scss */
-  .cntct-form form.wrap {
-    width: 500px;
-  }
-
-  /* line 45, ../sass/modules/_cntct-form.scss */
-  .cntct-form h2 {
-    font-size: 157px;
-  }
-}
-/*.article-index{
-  text-align:left !important;
-}*/
-/*.article-roll{
-	background: #F8F8F8;
-padding: 20px 40px;
-}*/
-/* line 9, ../sass/modules/_article-index.scss */
-.article-roll {
-  text-align: left;
-}
-
-/* line 12, ../sass/modules/_article-index.scss */
-.blog h2 {
-  font-size: 24px;
-  margin: 0;
-  text-align: left;
-}
-
-/* line 17, ../sass/modules/_article-index.scss */
-.article-index li a {
-  color: rgba(84, 145, 252, 0.9);
-  font-size: 19px;
-}
-
-/* line 21, ../sass/modules/_article-index.scss */
-.article-index li {
-  background: #F8F8F8;
-  margin-bottom: 5px;
-  padding-left: 10px;
-}
-
-/* line 26, ../sass/modules/_article-index.scss */
-.post-date {
-  color: #666;
-  padding: 5px 10px;
-  background: #ccc;
-  font-size: 13px;
-  float: right;
-}
-
-@media (min-width: 718px) {
-  /* line 34, ../sass/modules/_article-index.scss */
-  .article-index.wrap {
-    width: 700px;
-  }
-}
-/* line 1, ../sass/modules/_pen.scss */
-.pen {
-  box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 16px 7px;
-  background: #636363;
-  margin: 40px 0;
-  margin: 4rem 0;
-}
-
-/* line 1, ../sass/modules/_gist.scss */
-.gist {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 16px 7px;
-  text-align: left;
-  margin: 40px 0;
-  margin: 4rem 0;
-}
-
-/* line 3, ../sass/layout/_grid.scss */
-[class*='colspan-'] {
-  float: none;
-  left: auto;
-  margin-right: 0;
-  width: 100%;
-  margin-bottom: 3%;
-}
-
-/* line 10, ../sass/layout/_grid.scss */
-.grid-row {
-  margin-bottom: 0;
-}
-
-/* line 13, ../sass/layout/_grid.scss */
-.grid-row:last-of-type {
-  margin-bottom: 0;
-}
-
-@media (min-width: 700px) {
-  /* line 17, ../sass/layout/_grid.scss */
-  .grid-row {
-    margin-bottom: 3%;
-  }
-
-  /* line 20, ../sass/layout/_grid.scss */
-  [class*='colspan-'] {
-    position: relative;
-    left: 1.5%;
-    float: left;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-right: 3%;
-    margin-bottom: 0;
-  }
-
-  /* line 30, ../sass/layout/_grid.scss */
-  [class*='colspan-']:last-of-type {
-    margin-right: 0;
-  }
-
-  /* line 33, ../sass/layout/_grid.scss */
-  .colspan-1 {
-    width: 5.33333%;
-  }
-
-  /* line 36, ../sass/layout/_grid.scss */
-  .colspan-2 {
-    width: 13.66667%;
-  }
-
-  /* line 39, ../sass/layout/_grid.scss */
-  .colspan-3 {
-    width: 22%;
-  }
-
-  /* line 42, ../sass/layout/_grid.scss */
-  .colspan-4 {
-    width: 30.33333%;
-  }
-
-  /* line 45, ../sass/layout/_grid.scss */
-  .colspan-5 {
-    width: 38.66667%;
-  }
-
-  /* line 48, ../sass/layout/_grid.scss */
-  .colspan-6 {
-    width: 47%;
-  }
-
-  /* line 51, ../sass/layout/_grid.scss */
-  .colspan-7 {
-    width: 55.33333%;
-  }
-
-  /* line 54, ../sass/layout/_grid.scss */
-  .colspan-8 {
-    width: 63.66667%;
-  }
-
-  /* line 57, ../sass/layout/_grid.scss */
-  .colspan-9 {
-    width: 72%;
-  }
-
-  /* line 60, ../sass/layout/_grid.scss */
-  .colspan-10 {
-    width: 80.33333%;
-  }
-
-  /* line 63, ../sass/layout/_grid.scss */
-  .colspan-11 {
-    width: 88.66667%;
-  }
-
-  /* line 66, ../sass/layout/_grid.scss */
-  .colspan-12 {
-    width: 97%;
-  }
-
-  /* line 69, ../sass/layout/_grid.scss */
-  .grid-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-/* line 1, ../sass/layout/_about.scss */
-.about {
-  background: rgba(43, 164, 245, 0.46);
-}
-
-/* line 1, ../sass/layout/_work.scss */
-.work {
-  background: #8D8A8A;
-  background-image: url(../img/grey_wash_wall.png);
-  /*padding:100px 40px;*/
-}
-
-/* line 6, ../sass/layout/_work.scss */
-.work-grid {
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 100px;
-  padding-bottom: 100px;
-}
-
-@media (max-height: 700px) {
-  /* line 13, ../sass/layout/_work.scss */
-  .work-grid {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-/* line 1, ../sass/layout/_details.scss */
-.details {
-  display: none;
-  background: #FF2F2F;
-  text-align: left;
-  color: white;
-  top: 0;
-  z-index: 100;
-  height: 100%;
-}
-
-/* line 10, ../sass/layout/_details.scss */
-.tableDisplay {
-  display: table !important;
-}
-
-/* line 13, ../sass/layout/_details.scss */
-.details .cell {
-  text-align: left;
-}
-
-/* line 1, ../sass/layout/_contact.scss */
-.contact {
-  background: #333;
-  background-image: url(../img/dark_fish_skin.png);
-}
-
-/* line 1, ../sass/layout/_blog.scss */
-.blog {
-  background: #E9E9E9;
-  background: url(../img/sos.png);
-}
-
-/* line 1, ../sass/layout/_single.scss */
-.single {
-  padding: 80px 0;
-  padding: 8rem 0;
-}
-
-/* line 5, ../sass/layout/_single.scss */
-.single .wrap {
-  width: 90%;
-}
-
-/* line 8, ../sass/layout/_single.scss */
-.single h1 {
-  text-align: center;
-  font-size: 45px;
-  font-size: 4.5rem;
-  margin: 30px 0;
-  margin: 3rem 0;
-  font-family: georgia;
-}
-
-/* line 16, ../sass/layout/_single.scss */
-.single article p {
-  text-align: left;
-  line-height: 1.5;
-  font-size: 16px;
-  font-size: 1.6rem;
-  color: #504F4F;
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
-}
-
-/* line 25, ../sass/layout/_single.scss */
-.single article p.intro {
-  font-size: 26px;
-  font-size: 2.6rem;
-  line-height: 1.3;
-}
-
-/*.single{
-	padding:100px 0;	
-	padding:6.25rem 0;
-}
-.single .wrap{
- width:80%; 
-}
-.single article{
-	text-align:left;
-}
-.single h1{
-	text-align:center;
-	font-size: 65px;
-	font-size: 4.063rem;
-	margin:30px 0;
-	margin:1.875rem 0;
-  font-family:georgia;
-}
-.single article p{
-	text-align:justify;
-	font-size: 24px;
-	font-size: 1.5rem;
-	color: #504F4F;
-  margin-bottom:30px;
-	margin-bottom:1.875rem;
-}
-.single article p.intro{
-	font-size: 36px;
-	font-size: 2.25rem;
-	line-height: 1.3;
-}*/
-@media (min-width: 618px) {
-  /* line 62, ../sass/layout/_single.scss */
-  .single .wrap {
-    width: 600px;
-  }
-}
-@media (max-height: 700px) {
-  /* line 2, ../sass/layout/_section.scss */
-  section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-/*Global*/
-/* line 2, ../sass/_type.scss */
-html {
-  font-size: 62.5%;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-/* line 9, ../sass/_type.scss */
-h1, h2 {
-  border: none;
-  color: #66544c;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-@media (min-width: 618px) {
-  /* line 17, ../sass/_type.scss */
-  html {
-    font-size: 80.5%;
-  }
-}
-/*
+/*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
 
@@ -966,7 +13,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-/* line 17, ../sass/_animations.scss */
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -974,26 +21,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-fill-mode: both;
 }
 
-/* line 24, ../sass/_animations.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 @-webkit-keyframes bounce {
-  /* line 30, ../sass/_animations.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 35, ../sass/_animations.scss */
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 40, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
@@ -1001,21 +44,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounce {
-  /* line 47, ../sass/_animations.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 53, ../sass/_animations.scss */
   40% {
     -webkit-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 59, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
@@ -1023,57 +63,49 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 66, ../sass/_animations.scss */
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
 @-webkit-keyframes flash {
-  /* line 72, ../sass/_animations.scss */
   0%, 50%, 100% {
     opacity: 1;
   }
 
-  /* line 76, ../sass/_animations.scss */
   25%, 75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  /* line 82, ../sass/_animations.scss */
   0%, 50%, 100% {
     opacity: 1;
   }
 
-  /* line 86, ../sass/_animations.scss */
   25%, 75% {
     opacity: 0;
   }
 }
 
-/* line 91, ../sass/_animations.scss */
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes pulse {
-  /* line 99, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 104, ../sass/_animations.scss */
   50% {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 109, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1081,21 +113,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes pulse {
-  /* line 116, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 122, ../sass/_animations.scss */
   50% {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 128, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1103,26 +132,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 135, ../sass/_animations.scss */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 
 @-webkit-keyframes shake {
-  /* line 141, ../sass/_animations.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 146, ../sass/_animations.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 151, ../sass/_animations.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -1130,21 +155,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes shake {
-  /* line 158, ../sass/_animations.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 164, ../sass/_animations.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 170, ../sass/_animations.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
@@ -1152,38 +174,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 177, ../sass/_animations.scss */
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
 }
 
 @-webkit-keyframes swing {
-  /* line 183, ../sass/_animations.scss */
   20% {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 
-  /* line 188, ../sass/_animations.scss */
   40% {
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
 
-  /* line 193, ../sass/_animations.scss */
   60% {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
 
-  /* line 198, ../sass/_animations.scss */
   80% {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
 
-  /* line 203, ../sass/_animations.scss */
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -1191,35 +207,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes swing {
-  /* line 210, ../sass/_animations.scss */
   20% {
     -webkit-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     transform: rotate(15deg);
   }
 
-  /* line 216, ../sass/_animations.scss */
   40% {
     -webkit-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
 
-  /* line 222, ../sass/_animations.scss */
   60% {
     -webkit-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
     transform: rotate(5deg);
   }
 
-  /* line 228, ../sass/_animations.scss */
   80% {
     -webkit-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
 
-  /* line 234, ../sass/_animations.scss */
   100% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -1227,7 +238,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 241, ../sass/_animations.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -1237,31 +247,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes tada {
-  /* line 250, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 255, ../sass/_animations.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 260, ../sass/_animations.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 265, ../sass/_animations.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 270, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -1269,35 +274,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes tada {
-  /* line 277, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 283, ../sass/_animations.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     -ms-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 289, ../sass/_animations.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 295, ../sass/_animations.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 301, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
     -ms-transform: scale(1) rotate(0);
@@ -1305,51 +305,44 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 308, ../sass/_animations.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes wobble {
-  /* line 316, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
 
-  /* line 321, ../sass/_animations.scss */
   15% {
     -webkit-transform: translateX(-25%) rotate(-5deg);
     transform: translateX(-25%) rotate(-5deg);
   }
 
-  /* line 326, ../sass/_animations.scss */
   30% {
     -webkit-transform: translateX(20%) rotate(3deg);
     transform: translateX(20%) rotate(3deg);
   }
 
-  /* line 331, ../sass/_animations.scss */
   45% {
     -webkit-transform: translateX(-15%) rotate(-3deg);
     transform: translateX(-15%) rotate(-3deg);
   }
 
-  /* line 336, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateX(10%) rotate(2deg);
     transform: translateX(10%) rotate(2deg);
   }
 
-  /* line 341, ../sass/_animations.scss */
   75% {
     -webkit-transform: translateX(-5%) rotate(-1deg);
     transform: translateX(-5%) rotate(-1deg);
   }
 
-  /* line 346, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
@@ -1357,49 +350,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes wobble {
-  /* line 353, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
   }
 
-  /* line 359, ../sass/_animations.scss */
   15% {
     -webkit-transform: translateX(-25%) rotate(-5deg);
     -ms-transform: translateX(-25%) rotate(-5deg);
     transform: translateX(-25%) rotate(-5deg);
   }
 
-  /* line 365, ../sass/_animations.scss */
   30% {
     -webkit-transform: translateX(20%) rotate(3deg);
     -ms-transform: translateX(20%) rotate(3deg);
     transform: translateX(20%) rotate(3deg);
   }
 
-  /* line 371, ../sass/_animations.scss */
   45% {
     -webkit-transform: translateX(-15%) rotate(-3deg);
     -ms-transform: translateX(-15%) rotate(-3deg);
     transform: translateX(-15%) rotate(-3deg);
   }
 
-  /* line 377, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateX(10%) rotate(2deg);
     -ms-transform: translateX(10%) rotate(2deg);
     transform: translateX(10%) rotate(2deg);
   }
 
-  /* line 383, ../sass/_animations.scss */
   75% {
     -webkit-transform: translateX(-5%) rotate(-1deg);
     -ms-transform: translateX(-5%) rotate(-1deg);
     transform: translateX(-5%) rotate(-1deg);
   }
 
-  /* line 389, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
@@ -1407,34 +393,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 396, ../sass/_animations.scss */
 .wobble {
   -webkit-animation-name: wobble;
   animation-name: wobble;
 }
 
 @-webkit-keyframes bounceIn {
-  /* line 402, ../sass/_animations.scss */
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
-    transform: scale(0.3);
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
   }
 
-  /* line 408, ../sass/_animations.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
 
-  /* line 414, ../sass/_animations.scss */
   70% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
   }
 
-  /* line 419, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1442,15 +423,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceIn {
-  /* line 426, ../sass/_animations.scss */
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
-    -ms-transform: scale(0.3);
-    transform: scale(0.3);
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
   }
 
-  /* line 433, ../sass/_animations.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.05);
@@ -1458,14 +437,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1.05);
   }
 
-  /* line 440, ../sass/_animations.scss */
   70% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
   }
 
-  /* line 446, ../sass/_animations.scss */
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1473,34 +450,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 453, ../sass/_animations.scss */
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
 
 @-webkit-keyframes bounceInDown {
-  /* line 459, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 465, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
-  /* line 471, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 476, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1508,7 +480,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInDown {
-  /* line 483, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -1516,7 +487,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 490, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
@@ -1524,14 +494,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(30px);
   }
 
-  /* line 497, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 503, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -1539,34 +507,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 510, ../sass/_animations.scss */
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
 
 @-webkit-keyframes bounceInLeft {
-  /* line 516, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 522, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
   }
 
-  /* line 528, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 533, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -1574,7 +537,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInLeft {
-  /* line 540, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -1582,7 +544,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 547, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(30px);
@@ -1590,14 +551,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(30px);
   }
 
-  /* line 554, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
-  /* line 560, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -1605,34 +564,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 567, ../sass/_animations.scss */
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
 }
 
 @-webkit-keyframes bounceInRight {
-  /* line 573, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 579, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
   }
 
-  /* line 585, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 
-  /* line 590, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -1640,7 +594,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInRight {
-  /* line 597, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -1648,7 +601,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 604, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(-30px);
@@ -1656,14 +608,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-30px);
   }
 
-  /* line 611, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);
   }
 
-  /* line 617, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -1671,34 +621,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 624, ../sass/_animations.scss */
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
 
 @-webkit-keyframes bounceInUp {
-  /* line 630, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 
-  /* line 636, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 
-  /* line 642, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
 
-  /* line 647, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1706,7 +651,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceInUp {
-  /* line 654, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -1714,7 +658,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(2000px);
   }
 
-  /* line 661, ../sass/_animations.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(-30px);
@@ -1722,14 +665,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-30px);
   }
 
-  /* line 668, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateY(10px);
     -ms-transform: translateY(10px);
     transform: translateY(10px);
   }
 
-  /* line 674, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -1737,56 +678,48 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 681, ../sass/_animations.scss */
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
 
 @-webkit-keyframes bounceOut {
-  /* line 687, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 692, ../sass/_animations.scss */
   25% {
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
   }
 
-  /* line 697, ../sass/_animations.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  /* line 703, ../sass/_animations.scss */
   100% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
-    transform: scale(0.3);
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
   }
 }
 
 @keyframes bounceOut {
-  /* line 711, ../sass/_animations.scss */
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 717, ../sass/_animations.scss */
   25% {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
   }
 
-  /* line 723, ../sass/_animations.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.1);
@@ -1794,36 +727,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1.1);
   }
 
-  /* line 730, ../sass/_animations.scss */
   100% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
-    -ms-transform: scale(0.3);
-    transform: scale(0.3);
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
   }
 }
 
-/* line 738, ../sass/_animations.scss */
 .bounceOut {
   -webkit-animation-name: bounceOut;
   animation-name: bounceOut;
 }
 
 @-webkit-keyframes bounceOutDown {
-  /* line 744, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 749, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
-  /* line 755, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -1832,14 +760,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutDown {
-  /* line 763, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 769, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(-20px);
@@ -1847,7 +773,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-20px);
   }
 
-  /* line 776, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -1856,27 +781,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 784, ../sass/_animations.scss */
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
 
 @-webkit-keyframes bounceOutLeft {
-  /* line 790, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 795, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
 
-  /* line 801, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -1885,14 +806,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutLeft {
-  /* line 809, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 815, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(20px);
@@ -1900,7 +819,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(20px);
   }
 
-  /* line 822, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -1909,27 +827,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 830, ../sass/_animations.scss */
 .bounceOutLeft {
   -webkit-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft;
 }
 
 @-webkit-keyframes bounceOutRight {
-  /* line 836, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 841, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
 
-  /* line 847, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -1938,14 +852,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutRight {
-  /* line 855, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 861, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
@@ -1953,7 +865,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-20px);
   }
 
-  /* line 868, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -1962,27 +873,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 876, ../sass/_animations.scss */
 .bounceOutRight {
   -webkit-animation-name: bounceOutRight;
   animation-name: bounceOutRight;
 }
 
 @-webkit-keyframes bounceOutUp {
-  /* line 882, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 887, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
 
-  /* line 893, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -1991,14 +898,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes bounceOutUp {
-  /* line 901, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 907, ../sass/_animations.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(20px);
@@ -2006,7 +911,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(20px);
   }
 
-  /* line 914, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2015,51 +919,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 922, ../sass/_animations.scss */
 .bounceOutUp {
   -webkit-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 928, ../sass/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 932, ../sass/_animations.scss */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  /* line 938, ../sass/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 942, ../sass/_animations.scss */
   100% {
     opacity: 1;
   }
 }
 
-/* line 947, ../sass/_animations.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeInDown {
-  /* line 953, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
-  /* line 959, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2068,7 +964,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInDown {
-  /* line 967, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -2076,7 +971,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-20px);
   }
 
-  /* line 974, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2085,21 +979,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 982, ../sass/_animations.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
 @-webkit-keyframes fadeInDownBig {
-  /* line 988, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 994, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2108,7 +999,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInDownBig {
-  /* line 1002, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2116,7 +1006,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 1009, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2125,21 +1014,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1017, ../sass/_animations.scss */
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
 
 @-webkit-keyframes fadeInLeft {
-  /* line 1023, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
 
-  /* line 1029, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2148,7 +1034,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInLeft {
-  /* line 1037, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -2156,7 +1041,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-20px);
   }
 
-  /* line 1044, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2165,21 +1049,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1052, ../sass/_animations.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
 @-webkit-keyframes fadeInLeftBig {
-  /* line 1058, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 1064, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2188,7 +1069,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInLeftBig {
-  /* line 1072, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -2196,7 +1076,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 1079, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2205,21 +1084,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1087, ../sass/_animations.scss */
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
 
 @-webkit-keyframes fadeInRight {
-  /* line 1093, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
 
-  /* line 1099, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2228,7 +1104,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInRight {
-  /* line 1107, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -2236,7 +1111,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(20px);
   }
 
-  /* line 1114, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2245,21 +1119,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1122, ../sass/_animations.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
 @-webkit-keyframes fadeInRightBig {
-  /* line 1128, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 1134, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2268,7 +1139,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInRightBig {
-  /* line 1142, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -2276,7 +1146,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 1149, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2285,21 +1154,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1157, ../sass/_animations.scss */
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
 }
 
 @-webkit-keyframes fadeInUp {
-  /* line 1163, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
 
-  /* line 1169, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2308,7 +1174,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInUp {
-  /* line 1177, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -2316,7 +1181,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(20px);
   }
 
-  /* line 1184, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2325,21 +1189,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1192, ../sass/_animations.scss */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
 @-webkit-keyframes fadeInUpBig {
-  /* line 1198, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 
-  /* line 1204, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2348,7 +1209,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeInUpBig {
-  /* line 1212, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -2356,7 +1216,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(2000px);
   }
 
-  /* line 1219, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2365,51 +1224,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1227, ../sass/_animations.scss */
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
 }
 
 @-webkit-keyframes fadeOut {
-  /* line 1233, ../sass/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 1237, ../sass/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  /* line 1243, ../sass/_animations.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 1247, ../sass/_animations.scss */
   100% {
     opacity: 0;
   }
 }
 
-/* line 1252, ../sass/_animations.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
 
 @-webkit-keyframes fadeOutDown {
-  /* line 1258, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1264, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -2418,7 +1269,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutDown {
-  /* line 1272, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2426,7 +1276,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1279, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -2435,21 +1284,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1287, ../sass/_animations.scss */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
 
 @-webkit-keyframes fadeOutDownBig {
-  /* line 1293, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1299, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -2458,7 +1304,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutDownBig {
-  /* line 1307, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2466,7 +1311,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1314, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -2475,21 +1319,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1322, ../sass/_animations.scss */
 .fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
 }
 
 @-webkit-keyframes fadeOutLeft {
-  /* line 1328, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1334, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -2498,7 +1339,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutLeft {
-  /* line 1342, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2506,7 +1346,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1349, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -2515,21 +1354,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1357, ../sass/_animations.scss */
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }
 
 @-webkit-keyframes fadeOutLeftBig {
-  /* line 1363, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1369, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -2538,7 +1374,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutLeftBig {
-  /* line 1377, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2546,7 +1381,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1384, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -2555,21 +1389,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1392, ../sass/_animations.scss */
 .fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
 }
 
 @-webkit-keyframes fadeOutRight {
-  /* line 1398, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1404, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -2578,7 +1409,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutRight {
-  /* line 1412, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2586,7 +1416,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1419, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -2595,21 +1424,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1427, ../sass/_animations.scss */
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
 
 @-webkit-keyframes fadeOutRightBig {
-  /* line 1433, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 1439, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -2618,7 +1444,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutRightBig {
-  /* line 1447, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -2626,7 +1451,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
   }
 
-  /* line 1454, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -2635,21 +1459,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1462, ../sass/_animations.scss */
 .fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig;
 }
 
 @-webkit-keyframes fadeOutUp {
-  /* line 1468, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1474, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -2658,7 +1479,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutUp {
-  /* line 1482, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2666,7 +1486,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1489, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -2675,21 +1494,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1497, ../sass/_animations.scss */
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
 
 @-webkit-keyframes fadeOutUpBig {
-  /* line 1503, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 1509, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2698,7 +1514,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes fadeOutUpBig {
-  /* line 1517, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2706,7 +1521,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 
-  /* line 1524, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2715,14 +1529,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1532, ../sass/_animations.scss */
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
 }
 
 @-webkit-keyframes flip {
-  /* line 1538, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
     transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
@@ -2730,7 +1542,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1545, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
     transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
@@ -2738,7 +1549,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1552, ../sass/_animations.scss */
   50% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
     transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
@@ -2746,15 +1556,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1559, ../sass/_animations.scss */
   80% {
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
-  /* line 1566, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
     transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
@@ -2764,7 +1572,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flip {
-  /* line 1575, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
     -ms-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
@@ -2773,7 +1580,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1583, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
     -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
@@ -2782,7 +1588,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-out;
   }
 
-  /* line 1591, ../sass/_animations.scss */
   50% {
     -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
     -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
@@ -2791,16 +1596,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in;
   }
 
-  /* line 1599, ../sass/_animations.scss */
   80% {
-    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
-    -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
-    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+    -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
-  /* line 1607, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
     -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
@@ -2810,7 +1613,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1616, ../sass/_animations.scss */
 .animated.flip {
   -webkit-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -2820,26 +1622,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipInX {
-  /* line 1625, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
 
-  /* line 1631, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) rotateX(-10deg);
     transform: perspective(400px) rotateX(-10deg);
   }
 
-  /* line 1636, ../sass/_animations.scss */
   70% {
     -webkit-transform: perspective(400px) rotateX(10deg);
     transform: perspective(400px) rotateX(10deg);
   }
 
-  /* line 1641, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     transform: perspective(400px) rotateX(0deg);
@@ -2848,7 +1646,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipInX {
-  /* line 1649, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     -ms-transform: perspective(400px) rotateX(90deg);
@@ -2856,21 +1653,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1656, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) rotateX(-10deg);
     -ms-transform: perspective(400px) rotateX(-10deg);
     transform: perspective(400px) rotateX(-10deg);
   }
 
-  /* line 1662, ../sass/_animations.scss */
   70% {
     -webkit-transform: perspective(400px) rotateX(10deg);
     -ms-transform: perspective(400px) rotateX(10deg);
     transform: perspective(400px) rotateX(10deg);
   }
 
-  /* line 1668, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     -ms-transform: perspective(400px) rotateX(0deg);
@@ -2879,7 +1673,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1676, ../sass/_animations.scss */
 .flipInX {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -2889,26 +1682,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipInY {
-  /* line 1685, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     transform: perspective(400px) rotateY(90deg);
     opacity: 0;
   }
 
-  /* line 1691, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) rotateY(-10deg);
     transform: perspective(400px) rotateY(-10deg);
   }
 
-  /* line 1696, ../sass/_animations.scss */
   70% {
     -webkit-transform: perspective(400px) rotateY(10deg);
     transform: perspective(400px) rotateY(10deg);
   }
 
-  /* line 1701, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
@@ -2917,7 +1706,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipInY {
-  /* line 1709, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     -ms-transform: perspective(400px) rotateY(90deg);
@@ -2925,21 +1713,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1716, ../sass/_animations.scss */
   40% {
     -webkit-transform: perspective(400px) rotateY(-10deg);
     -ms-transform: perspective(400px) rotateY(-10deg);
     transform: perspective(400px) rotateY(-10deg);
   }
 
-  /* line 1722, ../sass/_animations.scss */
   70% {
     -webkit-transform: perspective(400px) rotateY(10deg);
     -ms-transform: perspective(400px) rotateY(10deg);
     transform: perspective(400px) rotateY(10deg);
   }
 
-  /* line 1728, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     -ms-transform: perspective(400px) rotateY(0deg);
@@ -2948,7 +1733,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1736, ../sass/_animations.scss */
 .flipInY {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -2958,14 +1742,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipOutX {
-  /* line 1745, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     transform: perspective(400px) rotateX(0deg);
     opacity: 1;
   }
 
-  /* line 1751, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     transform: perspective(400px) rotateX(90deg);
@@ -2974,7 +1756,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipOutX {
-  /* line 1759, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateX(0deg);
     -ms-transform: perspective(400px) rotateX(0deg);
@@ -2982,7 +1763,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1766, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateX(90deg);
     -ms-transform: perspective(400px) rotateX(90deg);
@@ -2991,7 +1771,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1774, ../sass/_animations.scss */
 .flipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
@@ -3001,14 +1780,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes flipOutY {
-  /* line 1783, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
     opacity: 1;
   }
 
-  /* line 1789, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     transform: perspective(400px) rotateY(90deg);
@@ -3017,7 +1794,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes flipOutY {
-  /* line 1797, ../sass/_animations.scss */
   0% {
     -webkit-transform: perspective(400px) rotateY(0deg);
     -ms-transform: perspective(400px) rotateY(0deg);
@@ -3025,7 +1801,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1804, ../sass/_animations.scss */
   100% {
     -webkit-transform: perspective(400px) rotateY(90deg);
     -ms-transform: perspective(400px) rotateY(90deg);
@@ -3034,7 +1809,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1812, ../sass/_animations.scss */
 .flipOutY {
   -webkit-backface-visibility: visible !important;
   -ms-backface-visibility: visible !important;
@@ -3044,28 +1818,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes lightSpeedIn {
-  /* line 1821, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     transform: translateX(100%) skewX(-30deg);
     opacity: 0;
   }
 
-  /* line 1827, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateX(-20%) skewX(30deg);
     transform: translateX(-20%) skewX(30deg);
     opacity: 1;
   }
 
-  /* line 1833, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(0%) skewX(-15deg);
     transform: translateX(0%) skewX(-15deg);
     opacity: 1;
   }
 
-  /* line 1839, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0%) skewX(0deg);
     transform: translateX(0%) skewX(0deg);
@@ -3074,7 +1844,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes lightSpeedIn {
-  /* line 1847, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     -ms-transform: translateX(100%) skewX(-30deg);
@@ -3082,7 +1851,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1854, ../sass/_animations.scss */
   60% {
     -webkit-transform: translateX(-20%) skewX(30deg);
     -ms-transform: translateX(-20%) skewX(30deg);
@@ -3090,7 +1858,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1861, ../sass/_animations.scss */
   80% {
     -webkit-transform: translateX(0%) skewX(-15deg);
     -ms-transform: translateX(0%) skewX(-15deg);
@@ -3098,7 +1865,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1868, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0%) skewX(0deg);
     -ms-transform: translateX(0%) skewX(0deg);
@@ -3107,7 +1873,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1876, ../sass/_animations.scss */
 .lightSpeedIn {
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
@@ -3116,14 +1881,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes lightSpeedOut {
-  /* line 1884, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0%) skewX(0deg);
     transform: translateX(0%) skewX(0deg);
     opacity: 1;
   }
 
-  /* line 1890, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     transform: translateX(100%) skewX(-30deg);
@@ -3132,7 +1895,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes lightSpeedOut {
-  /* line 1898, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0%) skewX(0deg);
     -ms-transform: translateX(0%) skewX(0deg);
@@ -3140,7 +1902,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 1905, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(100%) skewX(-30deg);
     -ms-transform: translateX(100%) skewX(-30deg);
@@ -3149,7 +1910,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1913, ../sass/_animations.scss */
 .lightSpeedOut {
   -webkit-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut;
@@ -3158,7 +1918,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @-webkit-keyframes rotateIn {
-  /* line 1921, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -3167,7 +1926,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1929, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -3178,7 +1936,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateIn {
-  /* line 1939, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -3189,7 +1946,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1949, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -3201,14 +1957,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 1960, ../sass/_animations.scss */
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
 
 @-webkit-keyframes rotateInDownLeft {
-  /* line 1966, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3217,7 +1971,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1974, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3228,7 +1981,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInDownLeft {
-  /* line 1984, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3239,7 +1991,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 1994, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3251,14 +2002,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2005, ../sass/_animations.scss */
 .rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft;
 }
 
 @-webkit-keyframes rotateInDownRight {
-  /* line 2011, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3267,7 +2016,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2019, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3278,7 +2026,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInDownRight {
-  /* line 2029, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3289,7 +2036,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2039, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3301,14 +2047,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2050, ../sass/_animations.scss */
 .rotateInDownRight {
   -webkit-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight;
 }
 
 @-webkit-keyframes rotateInUpLeft {
-  /* line 2056, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3317,7 +2061,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2064, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3328,7 +2071,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInUpLeft {
-  /* line 2074, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3339,7 +2081,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2084, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3351,14 +2092,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2095, ../sass/_animations.scss */
 .rotateInUpLeft {
   -webkit-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
 }
 
 @-webkit-keyframes rotateInUpRight {
-  /* line 2101, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3367,7 +2106,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2109, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3378,7 +2116,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateInUpRight {
-  /* line 2119, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3389,7 +2126,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
   }
 
-  /* line 2129, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3401,14 +2137,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2140, ../sass/_animations.scss */
 .rotateInUpRight {
   -webkit-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight;
 }
 
 @-webkit-keyframes rotateOut {
-  /* line 2146, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -3417,7 +2151,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2154, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: center center;
     transform-origin: center center;
@@ -3428,7 +2161,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOut {
-  /* line 2164, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -3439,7 +2171,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2174, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
@@ -3451,14 +2182,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2185, ../sass/_animations.scss */
 .rotateOut {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
 
 @-webkit-keyframes rotateOutDownLeft {
-  /* line 2191, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3467,7 +2196,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2199, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3478,7 +2206,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutDownLeft {
-  /* line 2209, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3489,7 +2216,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2219, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3501,14 +2227,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2230, ../sass/_animations.scss */
 .rotateOutDownLeft {
   -webkit-animation-name: rotateOutDownLeft;
   animation-name: rotateOutDownLeft;
 }
 
 @-webkit-keyframes rotateOutDownRight {
-  /* line 2236, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3517,7 +2241,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2244, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3528,7 +2251,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutDownRight {
-  /* line 2254, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3539,7 +2261,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2264, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3551,14 +2272,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2275, ../sass/_animations.scss */
 .rotateOutDownRight {
   -webkit-animation-name: rotateOutDownRight;
   animation-name: rotateOutDownRight;
 }
 
 @-webkit-keyframes rotateOutUpLeft {
-  /* line 2281, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3567,7 +2286,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2289, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
@@ -3578,7 +2296,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutUpLeft {
-  /* line 2299, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3589,7 +2306,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2309, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
@@ -3601,14 +2317,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2320, ../sass/_animations.scss */
 .rotateOutUpLeft {
   -webkit-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft;
 }
 
 @-webkit-keyframes rotateOutUpRight {
-  /* line 2326, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3617,7 +2331,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2334, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
@@ -3628,7 +2341,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rotateOutUpRight {
-  /* line 2344, ../sass/_animations.scss */
   0% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3639,7 +2351,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
   }
 
-  /* line 2354, ../sass/_animations.scss */
   100% {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
@@ -3651,21 +2362,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2365, ../sass/_animations.scss */
 .rotateOutUpRight {
   -webkit-animation-name: rotateOutUpRight;
   animation-name: rotateOutUpRight;
 }
 
 @-webkit-keyframes slideInDown {
-  /* line 2371, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 2377, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -3673,7 +2381,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInDown {
-  /* line 2384, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -3681,7 +2388,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(-2000px);
   }
 
-  /* line 2391, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -3689,21 +2395,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2398, ../sass/_animations.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
 @-webkit-keyframes slideInLeft {
-  /* line 2404, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 
-  /* line 2410, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -3711,7 +2414,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInLeft {
-  /* line 2417, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -3719,7 +2421,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-2000px);
   }
 
-  /* line 2424, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -3727,21 +2428,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2431, ../sass/_animations.scss */
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
 
 @-webkit-keyframes slideInRight {
-  /* line 2437, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 
-  /* line 2443, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -3749,7 +2447,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideInRight {
-  /* line 2450, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -3757,7 +2454,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(2000px);
   }
 
-  /* line 2457, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -3765,20 +2461,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2464, ../sass/_animations.scss */
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
 }
 
 @-webkit-keyframes slideOutLeft {
-  /* line 2470, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2475, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -3787,14 +2480,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutLeft {
-  /* line 2483, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2489, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -3803,20 +2494,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2497, ../sass/_animations.scss */
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
 }
 
 @-webkit-keyframes slideOutRight {
-  /* line 2503, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2508, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -3825,14 +2513,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutRight {
-  /* line 2516, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
-  /* line 2522, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -3841,20 +2527,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2530, ../sass/_animations.scss */
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
 }
 
 @-webkit-keyframes slideOutUp {
-  /* line 2536, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 2541, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -3863,14 +2546,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes slideOutUp {
-  /* line 2549, ../sass/_animations.scss */
   0% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
-  /* line 2555, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -3879,14 +2560,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2563, ../sass/_animations.scss */
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
 
 @-webkit-keyframes hinge {
-  /* line 2569, ../sass/_animations.scss */
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
@@ -3896,7 +2575,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2578, ../sass/_animations.scss */
   20%, 60% {
     -webkit-transform: rotate(80deg);
     transform: rotate(80deg);
@@ -3906,7 +2584,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2587, ../sass/_animations.scss */
   40% {
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg);
@@ -3916,7 +2593,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2596, ../sass/_animations.scss */
   80% {
     -webkit-transform: rotate(60deg) translateY(0);
     transform: rotate(60deg) translateY(0);
@@ -3927,7 +2603,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2606, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(700px);
     transform: translateY(700px);
@@ -3936,7 +2611,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes hinge {
-  /* line 2614, ../sass/_animations.scss */
   0% {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
@@ -3948,7 +2622,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2625, ../sass/_animations.scss */
   20%, 60% {
     -webkit-transform: rotate(80deg);
     -ms-transform: rotate(80deg);
@@ -3960,7 +2633,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2636, ../sass/_animations.scss */
   40% {
     -webkit-transform: rotate(60deg);
     -ms-transform: rotate(60deg);
@@ -3972,7 +2644,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2647, ../sass/_animations.scss */
   80% {
     -webkit-transform: rotate(60deg) translateY(0);
     -ms-transform: rotate(60deg) translateY(0);
@@ -3985,7 +2656,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2659, ../sass/_animations.scss */
   100% {
     -webkit-transform: translateY(700px);
     -ms-transform: translateY(700px);
@@ -3994,22 +2664,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2667, ../sass/_animations.scss */
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes rollIn {
-  /* line 2675, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100%) rotate(-120deg);
     transform: translateX(-100%) rotate(-120deg);
   }
 
-  /* line 2681, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -4018,7 +2686,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rollIn {
-  /* line 2689, ../sass/_animations.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100%) rotate(-120deg);
@@ -4026,7 +2693,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-100%) rotate(-120deg);
   }
 
-  /* line 2696, ../sass/_animations.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -4035,22 +2701,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2704, ../sass/_animations.scss */
 .rollIn {
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
 @-webkit-keyframes rollOut {
-  /* line 2712, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
     transform: translateX(0px) rotate(0deg);
   }
 
-  /* line 2718, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(100%) rotate(120deg);
@@ -4059,7 +2723,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @keyframes rollOut {
-  /* line 2726, ../sass/_animations.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0px) rotate(0deg);
@@ -4067,7 +2730,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0px) rotate(0deg);
   }
 
-  /* line 2733, ../sass/_animations.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(100%) rotate(120deg);
@@ -4076,8 +2738,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-/* line 2741, ../sass/_animations.scss */
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
