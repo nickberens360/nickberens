@@ -17,18 +17,27 @@ padding: 20px 40px;
 .article-index li a{
 	color: rgba(84, 145, 252, 0.9);
   font-size:19px;
-}
-.article-index li {
 	background: #F8F8F8;
   margin-bottom: 5px;
-  padding-left: 10px;
+
+	display:block;
+}
+
+.post-title {
+	margin-left:10px;
+	transition: all .25s;
+}
+.article-index li a:hover .post-title{
+	margin-left:30px;
 }
 .post-date{
   color: #666;
   padding:5px 10px;
   background:#ccc;
 font-size: 13px;
-float:right;
+position: relative;
+top: -2px;
+
 }
 @media (min-width:718px) {
 .article-index.wrap{
