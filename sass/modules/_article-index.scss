@@ -34,10 +34,25 @@ padding: 20px 40px;
   color: #666;
   padding:5px 10px;
   background:#ccc;
-font-size: 13px;
-position: relative;
-top: -2px;
-
+	font-size: 13px;
+	position: relative;
+	top: -2px;
+}
+.post-date:after{
+content: "";
+position: absolute;
+bottom: -20px;
+left: 50px;
+border-width: 20px 0 0 20px;
+border-style: solid;
+border-color: #676B8A transparent;
+display: block;
+width: 0;
+top: 9px;
+left: -6px;
+bottom: auto;
+border-width: 19px 15px 0 0;
+border-color: transparent #ccc;
 }
 @media (min-width:718px) {
 .article-index.wrap{
