@@ -890,26 +890,28 @@ padding: 20px 40px;
   font-size: 4.5rem;
   margin: 30px 0;
   margin: 2rem 0;
+  color: #676B8A;
   /*margin-bottom: 10px;
   margin-bottom:.1em;*/
   font-family: georgia;
 }
 
-/* line 18, ../sass/layout/_single.scss */
+/* line 19, ../sass/layout/_single.scss */
 .single h2 {
   font-size: 24px;
   font-size: 2.4rem;
   margin: 0;
   text-align: left;
   font-family: georgia;
+  color: #676B8A;
 }
 
-/* line 25, ../sass/layout/_single.scss */
+/* line 27, ../sass/layout/_single.scss */
 .single article {
   text-align: left;
 }
 
-/* line 28, ../sass/layout/_single.scss */
+/* line 30, ../sass/layout/_single.scss */
 .single article p {
   line-height: 1.5;
   font-size: 16px;
@@ -919,7 +921,7 @@ padding: 20px 40px;
   margin-bottom: 2rem;
 }
 
-/* line 37, ../sass/layout/_single.scss */
+/* line 39, ../sass/layout/_single.scss */
 .single article p.intro {
   font-size: 26px;
   font-size: 2.6rem;
@@ -927,7 +929,7 @@ padding: 20px 40px;
   margin-top: 0;
 }
 
-/* line 43, ../sass/layout/_single.scss */
+/* line 45, ../sass/layout/_single.scss */
 .single-date {
   text-align: left;
   display: inline-block;
@@ -939,13 +941,18 @@ padding: 20px 40px;
   background: #676B8A;
 }
 
-/* line 55, ../sass/layout/_single.scss */
+/* line 56, ../sass/layout/_single.scss */
 .tags {
+  display: inline-block;
   margin-left: 5px;
   margin-left: .5rem;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 2px;
 }
 
-/* line 59, ../sass/layout/_single.scss */
+/* line 66, ../sass/layout/_single.scss */
 .tag-link {
   color: #4463F1;
   font-size: 1.5rem;
@@ -954,28 +961,58 @@ padding: 20px 40px;
   text-transform: uppercase;
 }
 
+/* line 75, ../sass/layout/_single.scss */
+.single.full-image header {
+  color: #fff;
+  height: 25rem;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 88, ../sass/layout/_single.scss */
+.single.full-image {
+  padding-top: 0;
+}
+
+/* line 91, ../sass/layout/_single.scss */
+.single.full-image h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+/*.single.full-image h1{
+	color:#fff;
+	margin-top:0;
+  background: url("http://www.freevector.com/site_media/preview_images/FreeVector-Vector-Geometric-Background.jpg");
+	padding-top:15rem;
+}*/
 @media (min-width: 618px) {
-  /* line 71, ../sass/layout/_single.scss */
+  /* line 112, ../sass/layout/_single.scss */
   .single .wrap {
     width: 600px;
   }
 
-  /*.single-date:after{
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50px;
-  border-width: 20px 0 0 20px;
-  border-style: solid;
-  border-color: #676B8A transparent;
-  display: block;
-  width: 0;
-  top: 13px;
-  left: -7px;
-  bottom: auto;
-  border-width: 19px 15px 0 0;
-  border-color: transparent #676B8A;
-  }*/
+  /* line 116, ../sass/layout/_single.scss */
+  .single-date:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    border-width: 20px 0 0 20px;
+    border-style: solid;
+    border-color: #676B8A transparent;
+    display: block;
+    width: 0;
+    top: 14px;
+    left: -6px;
+    bottom: auto;
+    border-width: 19px 15px 0 0;
+    border-color: transparent #676B8A;
+  }
 }
 @media (max-height: 700px) {
   /* line 2, ../sass/layout/_section.scss */

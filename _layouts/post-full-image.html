@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: post-full-image 
 
 ---
 <!doctype html>
@@ -30,12 +30,15 @@ layout: post
 <!--<link rel="stylesheet" type="text/css" href="../../../css/main.css">-->
 <link rel="stylesheet" href="{{ site.url }}/css/main.css" type="text/css" />
 <style>
-input[type='submit']
-{
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;  
+
+.single.full-image header{
+  background: url("{{ site.url }}/img/{{page.image}}");
 }
+
+
+
+
+
 </style>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
 
@@ -72,9 +75,14 @@ input[type='submit']
 </div>
 
 
-<section id="single" class="blog single size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
+<section id="single" class="blog single size full-image animated fadeIn"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-  <h1>{{page.title}}</h1>
+	
+	<header>
+		<div class="cell">
+		<h1>{{page.title}}</h1>
+	</div>
+	</header>
 	
 	<article class="wrap">
 <span class="single-date">{{ page.date | date: "%b %d, %Y" }}</span>

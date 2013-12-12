@@ -11,6 +11,7 @@
 	font-size: 4.5rem;
 	margin:30px 0;
 	margin:2rem 0;
+	color:#676B8A;
   /*margin-bottom: 10px;
   margin-bottom:.1em;*/
   font-family:georgia;
@@ -21,6 +22,7 @@ font-size: 2.4rem;
 margin: 0;
 text-align: left;
 font-family:georgia;
+color:#676B8A;
 }
 .single article{
   text-align:left;
@@ -51,11 +53,16 @@ color: #fff;
 background: #676B8A;
 }
 
-
 .tags{
+	display:inline-block;
 	margin-left:5px;
 	margin-left:.5rem;
+	margin-bottom:20px;
+	margin-bottom:2rem;
+	position: relative;
+	top: 2px;
 }
+
 .tag-link{
 	color:#4463F1;
 	font-size:1.5rem;
@@ -65,6 +72,40 @@ background: #676B8A;
 }
 
 
+.single.full-image header{
+	color:#fff;
+	height:25rem;
+	display: table;
+width: 100%;
+overflow: hidden;
+position: relative;
+margin-bottom:20px;
+margin-bottom:2rem;
+}
+
+
+
+.single.full-image{
+	padding-top:0;
+}
+.single.full-image h1{
+	margin-top:0;
+	color:#fff;
+}
+
+/*.single.full-image h1{
+	color:#fff;
+	margin-top:0;
+  background: url("http://www.freevector.com/site_media/preview_images/FreeVector-Vector-Geometric-Background.jpg");
+	padding-top:15rem;
+}*/
+
+
+
+
+
+
+
 
 
 @media (min-width:618px) {
@@ -72,7 +113,7 @@ background: #676B8A;
 	width:600px;
 	
 }
-/*.single-date:after{
+.single-date:after{
 content: "";
 position: absolute;
 bottom: -20px;
@@ -82,11 +123,11 @@ border-style: solid;
 border-color: #676B8A transparent;
 display: block;
 width: 0;
-top: 13px;
-left: -7px;
+top: 14px;
+left: -6px;
 bottom: auto;
 border-width: 19px 15px 0 0;
 border-color: transparent #676B8A;
-}*/
+}
 }
 
