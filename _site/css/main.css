@@ -894,9 +894,10 @@ padding: 20px 40px;
   /*margin-bottom: 10px;
   margin-bottom:.1em;*/
   font-family: georgia;
+  font-family: 'Oswald', sans-serif;
 }
 
-/* line 19, ../sass/layout/_single.scss */
+/* line 20, ../sass/layout/_single.scss */
 .single h2 {
   font-size: 24px;
   font-size: 2.4rem;
@@ -906,12 +907,12 @@ padding: 20px 40px;
   color: #676B8A;
 }
 
-/* line 27, ../sass/layout/_single.scss */
+/* line 28, ../sass/layout/_single.scss */
 .single article {
   text-align: left;
 }
 
-/* line 30, ../sass/layout/_single.scss */
+/* line 31, ../sass/layout/_single.scss */
 .single article p {
   line-height: 1.5;
   font-size: 16px;
@@ -921,7 +922,7 @@ padding: 20px 40px;
   margin-bottom: 2rem;
 }
 
-/* line 39, ../sass/layout/_single.scss */
+/* line 40, ../sass/layout/_single.scss */
 .single article p.intro {
   font-size: 26px;
   font-size: 2.6rem;
@@ -929,7 +930,7 @@ padding: 20px 40px;
   margin-top: 0;
 }
 
-/* line 45, ../sass/layout/_single.scss */
+/* line 46, ../sass/layout/_single.scss */
 .single-date {
   text-align: left;
   display: inline-block;
@@ -941,7 +942,7 @@ padding: 20px 40px;
   background: #676B8A;
 }
 
-/* line 56, ../sass/layout/_single.scss */
+/* line 57, ../sass/layout/_single.scss */
 .tags {
   display: inline-block;
   margin-left: 5px;
@@ -952,7 +953,7 @@ padding: 20px 40px;
   top: 2px;
 }
 
-/* line 66, ../sass/layout/_single.scss */
+/* line 67, ../sass/layout/_single.scss */
 .tag-link {
   color: #4463F1;
   font-size: 1.5rem;
@@ -961,7 +962,7 @@ padding: 20px 40px;
   text-transform: uppercase;
 }
 
-/* line 75, ../sass/layout/_single.scss */
+/* line 76, ../sass/layout/_single.scss */
 .single.full-image header {
   color: #fff;
   height: 25rem;
@@ -970,18 +971,32 @@ padding: 20px 40px;
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding-top: 30px;
+  padding-top: 3rem;
 }
 
-/* line 88, ../sass/layout/_single.scss */
+/* line 89, ../sass/layout/_single.scss */
+.single.full-image header img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* line 95, ../sass/layout/_single.scss */
 .single.full-image {
   padding-top: 0;
 }
 
-/* line 91, ../sass/layout/_single.scss */
+/* line 98, ../sass/layout/_single.scss */
 .single.full-image h1 {
   margin-top: 0;
   color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 1px 1px 1px #000;
+  background: rgba(0, 0, 0, 0.36);
+  display: inline-block;
+  padding: 0 39px;
 }
 
 /*.single.full-image h1{
@@ -991,12 +1006,12 @@ padding: 20px 40px;
 	padding-top:15rem;
 }*/
 @media (min-width: 618px) {
-  /* line 112, ../sass/layout/_single.scss */
+  /* line 124, ../sass/layout/_single.scss */
   .single .wrap {
     width: 600px;
   }
 
-  /* line 116, ../sass/layout/_single.scss */
+  /* line 128, ../sass/layout/_single.scss */
   .single-date:after {
     content: "";
     position: absolute;
