@@ -113,16 +113,9 @@ margin-bottom:20px;
 }*/
 
 
-
-
-
-
-
-
-
 @media (min-width:618px) {
 .single .wrap{
-	width:60%;
+	width:80%;
 }
 .single-date:after{
 content: "";
@@ -142,3 +135,9 @@ border-color: transparent #676B8A;
 }
 }
 
+
+@media (min-width:900px) {
+.single .wrap{
+	width:60%;
+}
+}
