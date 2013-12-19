@@ -1008,10 +1008,10 @@ padding: 20px 40px;
 @media (min-width: 618px) {
   /* line 124, ../sass/layout/_single.scss */
   .single .wrap {
-    width: 600px;
+    width: 60%;
   }
 
-  /* line 128, ../sass/layout/_single.scss */
+  /* line 127, ../sass/layout/_single.scss */
   .single-date:after {
     content: "";
     position: absolute;
