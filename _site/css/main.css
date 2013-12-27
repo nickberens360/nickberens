@@ -725,6 +725,11 @@ input[type="submit"].btns:active {
   width: 100%;
 }
 
+/* line 8, ../sass/modules/_gist.scss */
+.line {
+  width: 100%;
+}
+
 /* line 1, ../sass/modules/_code.scss */
 code {
   background: #D7D7D7;
