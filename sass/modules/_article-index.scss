@@ -1,65 +1,26 @@
-/* .article-roll{
-	text-align:left;
-}
-.blog h2{
-  font-size: 24px;
-  margin: 0;
-  text-align:left;
-}
-.article-index li a{
-	color: rgba(84, 145, 252, 0.9);
-  font-size:19px;
-	background: #F8F8F8;
-  margin-bottom: 5px;
 
-	display:block;
-}
-
-.post-title {
-	margin-left:10px;
-	transition: all .25s;
-}
-.article-index li a:hover .post-title{
-	margin-left:30px;
-}
-.post-date{
-  color: #666;
-  padding:5px 10px;
-  background:#ccc;
-	font-size: 13px;
-	position: relative;
-	top: -2px;
-}
-.post-date:after{
-content: "";
-position: absolute;
-bottom: -20px;
-left: 50px;
-border-width: 20px 0 0 20px;
-border-style: solid;
-border-color: #676B8A transparent;
-display: block;
-width: 0;
-top: 9px;
-left: -6px;
-bottom: auto;
-border-width: 19px 15px 0 0;
-border-color: transparent #ccc;
-}
-*/
 .article-index{
 	text-align:left;
 }
+.article-index .colspan-11{
+padding: 0 20px;
+background:#fff;
+}
 .article-index li{
-	background: #F8F8F8;
+	/*background: #F8F8F8;*/
   margin-bottom: 5px;
+	padding: 0 10px;
 }
 .article-index li a{
 	color: rgba(84, 145, 252, 0.9);
   font-size:19px;
-	
+	font-size:1.9rem;
+	/*line-height: 2.7;*/
 
 	display:block;
+}
+.article-index [class*='colspan-'] {
+	float:none;
 }
 @media (min-width:718px) {
 .article-index.wrap{

@@ -29,15 +29,8 @@ layout: post-image
 <!--<link rel="stylesheet" href="style.css">-->
 <!--<link rel="stylesheet" type="text/css" href="../../../css/main.css">-->
 <link rel="stylesheet" href="{{ site.url }}/css/main.css" type="text/css" />
-<style>
-input[type='submit']
-{
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;  
-}
-</style>
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+
+
 
 
 <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -77,9 +70,9 @@ input[type='submit']
 	<img src="{{ site.url }}/img/{{page.image-circle}}" width="166" height="164" alt=""/>
   
 	<article class="wrap">
-	<h1>{{page.title}}</h1>
+	<h1 id="fittext1">{{page.title}}</h1>
 	<span class="single-date">{{ page.date | date: "%b %d, %Y" }}</span>
-	<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>
+	<!--<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>-->
 	{{content}}
 	</article>
     
@@ -92,18 +85,13 @@ input[type='submit']
 
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>--> 
 <script>window.jQuery || document.write('<script src="{{ site.url }}/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
-<script type='text/javascript' src="{{ site.url }}/js/validation.js"></script>
 <script src="{{ site.url }}/js/main.js"></script> 
-<style>
-@media (max-height: 445px){
-.about.size, .contact.size, .work.size{
-	padding:75px 0;
-}
-.details.size {
-	min-height:600px !important;
-}
-}
-</style>
+<script src="{{ site.url }}/js/fittext.js"></script>
+<script type="text/javascript">
+				$("#fittext1").fitText();
+				$("#fittext2").fitText(1.2);
+				$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+</script>
 </body>
 </html>
 
