@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Hello World Blog s
+title: Hello World Blog
 ---
 
 <ul class="article-roll">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 3 %}
       <li>        
         <a href="{{ site.url }}{{ post.url }}"><span class="post-date">{{ post.date | date: "%d %b, %Y" }}</span> <span class="post-title">{{ post.title }}<span></a>
       </li>

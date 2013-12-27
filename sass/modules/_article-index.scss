@@ -1,12 +1,4 @@
-/*.article-index{
-  text-align:left !important;
-}*/
-
-/*.article-roll{
-	background: #F8F8F8;
-padding: 20px 40px;
-}*/
-.article-roll{
+/* .article-roll{
 	text-align:left;
 }
 .blog h2{
@@ -54,8 +46,23 @@ bottom: auto;
 border-width: 19px 15px 0 0;
 border-color: transparent #ccc;
 }
+*/
+.article-index{
+	text-align:left;
+}
+.article-index li{
+	background: #F8F8F8;
+  margin-bottom: 5px;
+}
+.article-index li a{
+	color: rgba(84, 145, 252, 0.9);
+  font-size:19px;
+	
+
+	display:block;
+}
 @media (min-width:718px) {
 .article-index.wrap{
 	width:700px;
 }
-}
+} 
