@@ -6,7 +6,6 @@
 background:#fff;
 }
 .article-index li{
-	/*background: #F8F8F8;*/
   margin-bottom: 5px;
 	padding: 0 10px;
 }
@@ -16,7 +15,7 @@ background:#fff;
 	font-size:1.9rem;
 	display:block;
 	background:#fff;
-	
+	text-align:center;
 }
 .article-index [class*='colspan-'] {
 	float:none;
@@ -30,6 +29,10 @@ background:#fff;
 }
 .article-index  img{
 	margin-top: 5px;
+	display: block;
+margin: auto;
+margin-bottom: 12px;
+
 }
 .post-title{
 	position: relative;
@@ -42,12 +45,16 @@ background:#fff;
 .single .article-index.wrap{
 	width:700px;
 }
+.article-index li a{
+	text-align:left;
+}
 .article-index  img{
 	display:inline;
 	position: relative;
 top: 6px;
 margin-top: 0;
 margin-left:10px;
+margin-bottom: 0;
 }
 .post-title{
 	position: relative;
