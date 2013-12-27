@@ -1,0 +1,21 @@
+---
+layout: post-image
+title: Git Alias
+image-circle: git.png
+image: village.jpg
+tags:
+- git
+---
+
+
+<p class="intro">I love me some git, but I hate typing. My first world problem is having to type <code>git add -A</code> and <code>git commit -m "my message"</code> over and over again.</p>
+
+<h2>Git alias to the rescue</h2>
+
+<p>The first step is to fire up a terminal window and run the following:</p>
+
+<p><code>git config --global alias.add-commit '!git add -A && git commit'</code></p>
+
+<p>Now you can use:</p>
+
+<p><code>git add-commit -m 'My commit message'</code></p>
