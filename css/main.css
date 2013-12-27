@@ -620,35 +620,83 @@ input[type="submit"].btns:active {
 
 /* line 5, ../sass/modules/_article-index.scss */
 .article-index .colspan-11 {
-  padding: 0 20px;
   background: #fff;
 }
 
-/* line 9, ../sass/modules/_article-index.scss */
+/* line 8, ../sass/modules/_article-index.scss */
 .article-index li {
   /*background: #F8F8F8;*/
   margin-bottom: 5px;
   padding: 0 10px;
 }
 
-/* line 14, ../sass/modules/_article-index.scss */
+/* line 13, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
   font-size: 19px;
   font-size: 1.9rem;
-  /*line-height: 2.7;*/
   display: block;
+  background: #fff;
 }
 
-/* line 22, ../sass/modules/_article-index.scss */
+/* line 21, ../sass/modules/_article-index.scss */
 .article-index [class*='colspan-'] {
   float: none;
 }
 
+/* line 24, ../sass/modules/_article-index.scss */
+.article-index .post-date {
+  display: block;
+  background: #727272;
+  font-size: 13px;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+/* line 31, ../sass/modules/_article-index.scss */
+.article-index img {
+  margin-top: 5px;
+}
+
+/* line 34, ../sass/modules/_article-index.scss */
+.post-title {
+  position: relative;
+  top: -16px;
+}
+
 @media (min-width: 718px) {
-  /* line 26, ../sass/modules/_article-index.scss */
+  /* line 39, ../sass/modules/_article-index.scss */
   .article-index.wrap {
     width: 700px;
+  }
+
+  /* line 42, ../sass/modules/_article-index.scss */
+  .single .article-index.wrap {
+    width: 700px;
+  }
+
+  /* line 45, ../sass/modules/_article-index.scss */
+  .article-index img {
+    display: inline;
+    position: relative;
+    top: 6px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  /* line 52, ../sass/modules/_article-index.scss */
+  .post-title {
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+  }
+
+  /* line 57, ../sass/modules/_article-index.scss */
+  .article-index .post-date {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 18px;
   }
 }
 /* line 1, ../sass/modules/_pen.scss */
@@ -672,7 +720,6 @@ code {
   background: #D7D7D7;
   padding: 5px 10px;
   border-radius: 3px;
-  font-size: .8em;
 }
 
 /* line 1, ../sass/layout/_grid.scss */

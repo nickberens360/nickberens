@@ -3,7 +3,6 @@
 	text-align:left;
 }
 .article-index .colspan-11{
-padding: 0 20px;
 background:#fff;
 }
 .article-index li{
@@ -15,15 +14,51 @@ background:#fff;
 	color: rgba(84, 145, 252, 0.9);
   font-size:19px;
 	font-size:1.9rem;
-	/*line-height: 2.7;*/
-
 	display:block;
+	background:#fff;
+	
 }
 .article-index [class*='colspan-'] {
 	float:none;
 }
+.article-index .post-date{
+	display: block;
+	background: #727272;
+	font-size: 13px;
+	color: #fff;
+	padding:3px 6px;
+}
+.article-index  img{
+	margin-top: 5px;
+}
+.post-title{
+	position: relative;
+	top: -16px;
+}
 @media (min-width:718px) {
 .article-index.wrap{
 	width:700px;
+}
+.single .article-index.wrap{
+	width:700px;
+}
+.article-index  img{
+	display:inline;
+	position: relative;
+top: 6px;
+margin-top: 0;
+margin-left:10px;
+}
+.post-title{
+	position: relative;
+top: -10px;
+margin-left:10px;
+}
+.article-index .post-date{
+	display:inline-block;
+	float:right;
+	position:relative;
+	top:18px;
+	
 }
 } 

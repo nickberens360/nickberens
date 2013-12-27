@@ -67,12 +67,12 @@ layout: post-image
 
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="{{ site.url }}/img/{{page.image-circle}}" width="166" height="164" alt=""/>
+	<img src="{{ site.url }}/img/{{page.image-circle}}" width="166" height="166" alt=""/>
   
 	<article class="wrap">
 	<h1 id="fittext1">{{page.title}}</h1>
 	<span class="single-date">{{ page.date | date: "%b %d, %Y" }}</span>
-	<!--<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>-->
+	<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>
 	{{content}}
 	</article>
     
