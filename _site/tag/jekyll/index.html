@@ -16,10 +16,18 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://127.0.0.1/nickberens/_site//css/main.css" type="text/css" />
+<style>
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;  
+}
+</style>
+
 <!--[if lt IE 9]><link rel="stylesheet" media="all" href="css/style-ie.css"/><![endif]-->
 <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -48,7 +56,8 @@
 
 		</ul>
 	</div>
-	<div class="menu-toggle">
+	<!--<div class="menu-toggle">&equiv;</div>-->
+	<div class="menu-toggle pullDown">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -56,45 +65,79 @@
 </div>
 
 
-<section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
+<section id="single" class="blog single size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="http://127.0.0.1/nickberens/_site//img/git.png" width="166" height="166" alt=""/>
-  
-	<article class="wrap">
-	<h1 id="fittext1">Git Alias</h1>
-	<span class="single-date">Dec 27, 2013</span>
-	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site//tag/git">git</a></span>
-	<p class="intro">I love me some git, but I hate typing. My first world problem is having to type <code>git add -A</code> and <code>git commit -m "my message"</code> over and over again.</p>
-
-<h2>Git alias to the rescue</h2>
-
-<p>The first step is to fire up a terminal window and run the following:</p>
-
-<p><code>git config --global alias.add-commit '!git add -A && git commit'</code></p>
-
-<p>Now you can use:</p>
-
-<p><code>git add-commit -m 'My commit message'</code></p>
-	</article>
-    <div class="comments wrap">
-<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'nickberensme'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-    </div>
-	</div>
 		
+        
+        
+        
+        
+        
+        
+	<img src="http://127.0.0.1/nickberens/_site//img/css.png" width="165" height="165" alt=""/>
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        	
+  <h1>Posts Tagged &ldquo;jekyll&rdquo;</h1>
+	
+	<article class="article-index wrap">
+
+
+			<ul class="article-roll">
+        
+       
+        
+        
+        
+        
+        
+        
+       <li>   
+        <span class="post-date">29 Dec, 2013</span> <a href="http://127.0.0.1/nickberens/_site//2013/12/29/jekyll-tags.html"><img src="http://127.0.0.1/nickberens/_site//img/css.png" width="50" height="50" alt=""/><span class="post-title">Jekyll Post Tags<span></a>
+				
+      </li>
+                <!--<p class="summary">Summary: </p>
+                <ul class="tag_list">
+                        
+                        <li class="inline archive_list"><a class="tag_list_link" href="/tag/jekyll">jekyll</a></li>
+                        
+                </ul>-->
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		</ul>
+
+	 </article> 
+	
+	
+    
+	</div>
+	<a href="#contact" class="arrows down dark"></a> 	
 </section>
 
 
@@ -102,16 +145,17 @@
 
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>--> 
 <script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site//js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
+<script type='text/javascript' src="http://127.0.0.1/nickberens/_site//js/validation.js"></script>
 <script src="http://127.0.0.1/nickberens/_site//js/main.js"></script> 
-<script src="http://127.0.0.1/nickberens/_site//js/fittext.js"></script>
-<script type="text/javascript">
-				$("#fittext1").fitText();
-				$("#fittext2").fitText(1.2);
-				$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
-</script>
+<style>
+@media (max-height: 445px){
+.about.size, .contact.size, .work.size{
+	padding:75px 0;
+}
+.details.size {
+	min-height:600px !important;
+}
+}
+</style>
 </body>
 </html>
-
-
-
-

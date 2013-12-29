@@ -58,20 +58,22 @@
 
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="http://127.0.0.1/nickberens/_site//img/me2.png" width="166" height="166" alt=""/>
+	<img src="http://127.0.0.1/nickberens/_site//img/css.png" width="166" height="166" alt=""/>
   
 	<article class="wrap">
-	<h1 id="fittext1">About Me</h1>
-	<span class="single-date">Dec 30, 2013</span>
-	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site//tag/Life">Life</a></span>
-	<p class="intro">I really enjoy writing HTML, CSS and Javascript. I'm always trying to balance writing clean semantic HTML with, "holy crap, you need this done by when?".</p>
+	<h1 id="fittext1">Jekyll Post Tags</h1>
+	<span class="single-date">Dec 29, 2013</span>
+	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site//tag/jekyll">jekyll</a></span>
+	<p class="intro">Jekyll kind of sort of supports post tags. You have to fill in the blanks if want to be able to have tags in posts and link to the corresponding tag archive page.</p>
 
-<p>I work at an agency and  sometimes best practices just take a backseat to deadlines. Far too often the code in my work examples are littered with divs that should be section or article tags. I throw classes around like my life depends on it. I know this is wrong and I'm working on it, honestly I am.</p>
-			
-<p>I try my best to write CSS that is modular and portable. I keep poking around Johnathan Snook's book on <a href="http://smacss.com/">Scalable Modular Architecture for CSS</a>. Right now I'm just trying to figure it out myself. I think the best way to learn something is to do it wrong first, so you know why the right way is indeed the right way.</p>
-<p>I really enjoy Javascript and jQuery. I am really bad Javascript and jQuery. I am just learning the language (and programming in general), so everything I write is this inefficient trainwreck. I'm just not there yet. </p>
-<p>Design is fun, but it's not my passion. I don't like that I can't really Google my way out of a design problem like I can with a code problem. It's too personal, I get sad when someone doesn't like my work. I don't mind doing a little bit or design here or there, but to do it as a fulltime gig, no thanks.</p>
-<p>So this site and it's work examples are a snapshot of where I am at right now. I know my shortcomings and am always striving to improve.</p>
+<p>Fortunately Charlie Park wrote a great <a href="http://charliepark.org/tags-in-jekyll/">article</a> on how to create a plugin on how to accomplish this. The only problem is that he left out how to display the tags on the post itself and link it to the archive page.</p>
+
+<p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
+
+<p><code>&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/">&lt;/a&gt;</code>&#123;% endfor %}</code></p>
+
+<p>Simple, sort of.</p>
+
 
 	</article>
     <div class="comments wrap">
