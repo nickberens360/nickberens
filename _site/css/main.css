@@ -751,21 +751,27 @@ code {
 /* line 1, ../sass/modules/_name.scss */
 .name a {
   position: fixed;
-  margin-left: 50px;
-  left: 27px;
+  left: 0;
+  margin-left: 78px;
   background: #fff;
-  color: #7f7f80;
+  color: #555555;
   padding: 17px;
   font-size: 22px;
   z-index: 1000;
   text-align: left;
+  width: 100%;
 }
 
-/* line 12, ../sass/modules/_name.scss */
+/* line 13, ../sass/modules/_name.scss */
 .name span {
-  font-size: .9em;
-  color: #DFDFDF;
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  font-size: .8em;
+  color: #C9C9C9;
   font-style: italic;
+  margin-right: 90px;
 }
 
 /* line 3, ../sass/layout/_grid.scss */
@@ -940,8 +946,8 @@ code {
 
 /* line 1, ../sass/layout/_single.scss */
 .single {
-  padding: 80px 0;
-  padding: 8rem 0;
+  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 /* line 5, ../sass/layout/_single.scss */

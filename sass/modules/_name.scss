@@ -1,16 +1,22 @@
 .name a{
 position: fixed;
-margin-left: 50px;
-left: 27px;
+left: 0;
+margin-left: 78px;
 background: #fff;
-color: rgb(127, 127, 128);
+color: #555555;
 padding: 17px;
 font-size: 22px;
 z-index: 1000;
 text-align: left;
+width:100%;
 }
 .name span{
-	font-size:.9em;
-	color: #DFDFDF;
+	float:right;
+	display: inline-block;
+	position:relative;
+	top:5px;
+	font-size:.8em;
+	color: #C9C9C9;
 	font-style:italic;
+	margin-right: 90px;
 }
