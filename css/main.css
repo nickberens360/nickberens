@@ -755,16 +755,22 @@ code {
   margin-left: 78px;
   background: #fff;
   color: #555555;
-  padding: 17px;
-  font-size: 22px;
+  padding: 15px 14px;
+  font-size: 20px;
+  line-height: 1;
   z-index: 1000;
   text-align: left;
   width: 100%;
 }
 
-/* line 13, ../sass/modules/_name.scss */
-.name span {
-  float: right;
+/* line 14, ../sass/modules/_name.scss */
+.myname {
+  display: block;
+}
+
+/* line 18, ../sass/modules/_name.scss */
+.name .name-title {
+  float: left;
   display: inline-block;
   position: relative;
   top: 5px;
@@ -774,6 +780,58 @@ code {
   margin-right: 90px;
 }
 
+/* line 28, ../sass/modules/_name.scss */
+.name .lose {
+  display: none;
+}
+
+@media (min-width: 439px) {
+  /* line 33, ../sass/modules/_name.scss */
+  .name a {
+    padding: 17px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  /* line 38, ../sass/modules/_name.scss */
+  .myname {
+    display: inline;
+  }
+
+  /* line 41, ../sass/modules/_name.scss */
+  .name .name-title {
+    float: right;
+  }
+}
+@media (min-width: 626px) {
+  /* line 46, ../sass/modules/_name.scss */
+  .name .lose {
+    display: inline-block;
+  }
+}
+/*.name a{
+	position: fixed;
+	left: 0;
+	margin-left: 78px;
+	background: #fff;
+	color: #555555;
+	padding: 17px;
+	font-size: 22px;
+	z-index: 1000;
+	text-align: left;
+	width:100%;
+}*/
+/*.name .name-title{
+	float:right;
+	display: inline-block;
+	position:relative;
+	top:5px;
+	font-size:.8em;
+	color: #C9C9C9;
+	font-style:italic;
+	margin-right: 90px;
+}
+}*/
 /* line 3, ../sass/layout/_grid.scss */
 [class*='colspan-'] {
   float: none;
