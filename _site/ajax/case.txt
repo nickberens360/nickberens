@@ -241,7 +241,7 @@
 		<div class="colspan-6">
 			<h1>Media Query Generator</h1>
 			<div class="summary">
-				<p>A tool for easy media query creation. I keep it open in a browser tab next to the page I am developing. It's still pretty buggy and needs a solid re-factoring.</p>
+				<p>A tool for easy media query creation. I keep it open in a browser tab next to the page I am developing.</p>
 			</div>
 			<ul class="skills">
 				<li>HTML5, </li>
