@@ -632,58 +632,56 @@ input[type="submit"].btns:active {
 /* line 12, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
-  font-size: 19px;
-  font-size: 1.9rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   display: block;
   background: #fff;
-  text-align: center;
+  text-align: left;
+  padding: 5px 10px;
 }
 
-/* line 20, ../sass/modules/_article-index.scss */
+/* line 21, ../sass/modules/_article-index.scss */
 .article-index [class*='colspan-'] {
   float: none;
 }
 
-/* line 23, ../sass/modules/_article-index.scss */
+/* line 27, ../sass/modules/_article-index.scss */
 .article-index .post-date {
   display: block;
-  background: #727272;
+  background: #fff;
   font-size: 13px;
-  color: #fff;
+  color: #7A7A7A;
   padding: 3px 6px;
 }
 
-/* line 30, ../sass/modules/_article-index.scss */
-.article-index img {
-  margin-top: 5px;
-  display: block;
-  margin: auto;
-  margin-bottom: 12px;
-}
-
-/* line 37, ../sass/modules/_article-index.scss */
+/* line 34, ../sass/modules/_article-index.scss */
 .post-title {
   position: relative;
-  top: -16px;
+  top: -6px;
+}
+
+/* line 38, ../sass/modules/_article-index.scss */
+.article-index img {
+  display: none;
 }
 
 @media (min-width: 718px) {
-  /* line 42, ../sass/modules/_article-index.scss */
+  /* line 43, ../sass/modules/_article-index.scss */
   .article-index.wrap {
     width: 700px;
   }
 
-  /* line 45, ../sass/modules/_article-index.scss */
+  /* line 46, ../sass/modules/_article-index.scss */
   .single .article-index.wrap {
     width: 700px;
   }
 
-  /* line 48, ../sass/modules/_article-index.scss */
+  /* line 49, ../sass/modules/_article-index.scss */
   .article-index li a {
     text-align: left;
   }
 
-  /* line 51, ../sass/modules/_article-index.scss */
+  /* line 52, ../sass/modules/_article-index.scss */
   .article-index img {
     display: inline;
     position: relative;
@@ -693,21 +691,95 @@ input[type="submit"].btns:active {
     margin-bottom: 0;
   }
 
-  /* line 59, ../sass/modules/_article-index.scss */
+  /* line 60, ../sass/modules/_article-index.scss */
   .post-title {
     position: relative;
     top: -10px;
     margin-left: 10px;
   }
 
-  /* line 64, ../sass/modules/_article-index.scss */
+  /* line 65, ../sass/modules/_article-index.scss */
   .article-index .post-date {
     display: inline-block;
     float: right;
     position: relative;
     top: 18px;
+    background: #727272;
+    color: #fff;
   }
 }
+/*
+.article-index{
+	text-align:left;
+}
+.article-index .colspan-11{
+background:#fff;
+}
+.article-index li{
+  margin-bottom: 5px;
+	padding: 0 10px;
+}
+.article-index li a{
+	color: rgba(84, 145, 252, 0.9);
+  font-size:19px;
+	font-size:1.9rem;
+	display:block;
+	background:#fff;
+	text-align:center;
+}
+.article-index [class*='colspan-'] {
+	float:none;
+}
+.article-index .post-date{
+	display: block;
+	background: #727272;
+	font-size: 13px;
+	color: #fff;
+	padding:3px 6px;
+}
+.article-index  img{
+	margin-top: 5px;
+	display: block;
+margin: auto;
+margin-bottom: 12px;
+
+}
+.post-title{
+	position: relative;
+	top: -16px;
+}
+@media (min-width:718px) {
+.article-index.wrap{
+	width:700px;
+}
+.single .article-index.wrap{
+	width:700px;
+}
+.article-index li a{
+	text-align:left;
+}
+.article-index  img{
+	display:inline;
+	position: relative;
+top: 6px;
+margin-top: 0;
+margin-left:10px;
+margin-bottom: 0;
+}
+.post-title{
+	position: relative;
+top: -10px;
+margin-left:10px;
+}
+.article-index .post-date{
+	display:inline-block;
+	float:right;
+	position:relative;
+	top:18px;
+	
+}
+} 
+*/
 /* line 1, ../sass/modules/_pen.scss */
 .pen {
   box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 16px 7px;
@@ -775,7 +847,7 @@ code {
   position: relative;
   top: 5px;
   font-size: .8em;
-  color: #C9C9C9;
+  color: #A8A8A8;
   font-style: italic;
   margin-right: 90px;
 }
@@ -1004,8 +1076,8 @@ code {
 
 /* line 1, ../sass/layout/_single.scss */
 .single {
-  padding: 100px 0;
-  padding: 10rem 0;
+  padding: 100px 0 10px 0;
+  padding: 10rem 0 1rem 0;
 }
 
 /* line 5, ../sass/layout/_single.scss */
