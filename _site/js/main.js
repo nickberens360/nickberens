@@ -113,4 +113,31 @@ $('#details .clse').click(function(){
 
 
 
+
+
+$('#paged1').click(function(){ 
+
+	$('.article-roll').load("http://127.0.0.1/nickberens/_site/page2/index.html .article-roll"); 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

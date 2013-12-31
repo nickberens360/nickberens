@@ -4,11 +4,19 @@ title: Hello World Blog
 ---
 
 <ul class="article-roll">
-    {% for post in site.posts limit: 5 %}
+    {% for post in paginator.posts limit: 5 %}
       <li>   
         <span class="post-date">{{ post.date | date: "%d %b, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/img/{{post.image-circle}}" width="50" height="50" alt=""/><span class="post-title">{{ post.title }}<span></a>
 				
       </li>
     {% endfor %}
 </ul>
+
+
+
+<div id="paged1">Ajax me</div> 
+
+<div id="ajax-content">
+
+</div>
 
