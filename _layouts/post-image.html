@@ -58,7 +58,7 @@ layout: post-image
 		<span></span>
 	</div>
 </div>
-<div class="name animated fadeIn"><a href="http://nickberens.me"><span class="myname">Nick Berens</span> <span class="name-title"><span class="keep">Front End Developer</span><span class="lose">, Designer, Consultant</span></a></span></div>
+<div class="name"><a href="http://nickberens.me"><span class="myname">Nick Berens</span> <span class="name-title"><span class="keep">Front End Developer</span><span class="lose">, Designer, Consultant</span></a></span></div>
 
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
@@ -70,6 +70,9 @@ layout: post-image
 	<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>
 	{{content}}
 	</article>
+
+<p class="pull-right">{% if page.previous.url %} <a href="{{ site.url }}{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">left</a> 	{% endif %}   {% if page.next.url %} 	<a href="{{ site.url }}{{page.next.url}}" title="Next Post: {{page.next.title}}">right</a> 	{% endif %} </p> 
+
     <div class="comments wrap">
 <div id="disqus_thread"></div>
     <script type="text/javascript">

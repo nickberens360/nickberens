@@ -1,0 +1,20 @@
+---
+layout: post-image
+title: Jekyll Post Tags
+image-circle: jekyll.png
+tags:
+- jekyll
+---
+
+<p class="intro">Jekyll kind of sort of supports post tags. You have to fill in the blanks if want to be able to have tags in posts and link to the corresponding tag archive page.</p>
+
+<p>I am by no means an expert on the subject of Jekyll. I hacked this site together leaning heavily on Google.</p>
+
+<p>Fortunately Charlie Park wrote a great <a href="http://charliepark.org/tags-in-jekyll/">article</a> on how to create a plugin on how to accomplish this. The only problem is he left out how to display the tags on the post and the link to the tag archive page.</p>
+
+<p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
+
+<p><code class="block">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/{{ tag }}">{{ tag }}&lt;/a&gt;</code>&#123;% endfor %}</code></p>
+
+<p>Simple, sort of.</p>
+

@@ -16,18 +16,10 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://127.0.0.1/nickberens/_site/css/main.css" type="text/css" />
-<style>
-input[type='submit']
-{
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;  
-}
-</style>
-
 <!--[if lt IE 9]><link rel="stylesheet" media="all" href="css/style-ie.css"/><![endif]-->
 <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -56,8 +48,7 @@ input[type='submit']
 
 		</ul>
 	</div>
-	<!--<div class="menu-toggle">&equiv;</div>-->
-	<div class="menu-toggle pullDown">
+	<div class="menu-toggle">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -65,76 +56,56 @@ input[type='submit']
 </div>
 <div class="name"><a href="http://nickberens.me"><span class="myname">Nick Berens</span> <span class="name-title"><span class="keep">Front End Developer</span><span class="lose">, Designer, Consultant</span></a></span></div>
 
-<section id="single" class="blog single tag-index size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
+<section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-		
-        
-        
-        
-        
-        
-        
-	<img src="http://127.0.0.1/nickberens/_site/img/wp.png" width="165" height="165" alt=""/>
-		
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        	
+	<img src="http://127.0.0.1/nickberens/_site/img/jekyll.png" width="166" height="166" alt=""/>
   
-	
-	<article class="article-index wrap">
+	<article class="wrap">
+	<h1 id="fittext1">Jekyll Post Tags</h1>
+	<span class="single-date">Dec 29, 2013</span>
+	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/jekyll">jekyll</a></span>
+	<p class="intro">Jekyll kind of sort of supports post tags. You have to fill in the blanks if want to be able to have tags in posts and link to the corresponding tag archive page.</p>
 
-		<h1 id="fittext1">Posts Tagged &ldquo;WordPress&rdquo;</h1>
-			<ul class="article-roll">
-        
-       
-        
-        
-        
-        
-        
-        
-       <li>   
-        <span class="post-date">28 Dec, 2013</span> <a href="http://127.0.0.1/nickberens/_site/2013/12/28/test.html"><img src="http://127.0.0.1/nickberens/_site/img/wp.png" width="50" height="50" alt=""/><span class="post-title">List Wordpress Child Pages in Sidebar<span></a>
-				
-      </li>
-                <!--<p class="summary">Summary: </p>
-                <ul class="tag_list">
-                        
-                        <li class="inline archive_list"><a class="tag_list_link" href="/tag/WordPress">WordPress</a></li>
-                        
-                </ul>-->
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-		</ul>
+<p>I am by no means an expert on the subject of Jekyll. I hacked this site together leaning heavily on Google.</p>
 
-	 </article> 
-	
-	
+<p>Fortunately Charlie Park wrote a great <a href="http://charliepark.org/tags-in-jekyll/">article</a> on how to create a plugin on how to accomplish this. The only problem is he left out how to display the tags on the post and the link to the tag archive page.</p>
+
+<p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
+
+<p><code class="block">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/">&lt;/a&gt;</code>&#123;% endfor %}</code></p>
+
+<p>Simple, sort of.</p>
+
+
+	</article>
+
+<p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2013/12/28/test.html" title="Previous Post: List Wordpress Child Pages in Sidebar">left</a> 	    </p> 
+
+    <div class="comments wrap">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nickberensme'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
+    </div>
 	</div>
-	<a href="#contact" class="arrows down dark"></a> 	
+		
 </section>
 
 
 
 
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>--> 
 <script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
 <script src="http://127.0.0.1/nickberens/_site/js/main.js"></script> 
 <script src="http://127.0.0.1/nickberens/_site/js/fittext.js"></script>
@@ -145,3 +116,7 @@ input[type='submit']
 </script>
 </body>
 </html>
+
+
+
+

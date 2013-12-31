@@ -18,7 +18,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://nickberens.me/css/main.css" type="text/css" />
+<link rel="stylesheet" href="http://127.0.0.1/nickberens/_site/css/main.css" type="text/css" />
 <style>
 input[type='submit']
 {
@@ -63,9 +63,9 @@ input[type='submit']
 		<span></span>
 	</div>
 </div>
+<div class="name"><a href="http://nickberens.me"><span class="myname">Nick Berens</span> <span class="name-title"><span class="keep">Front End Developer</span><span class="lose">, Designer, Consultant</span></a></span></div>
 
-
-<section id="single" class="blog single size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
+<section id="single" class="blog single tag-index size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
 		
         
@@ -78,15 +78,19 @@ input[type='submit']
         
         
         
-	<img src="http://nickberens.me/img/css.png" width="165" height="165" alt=""/>
+        
+        
+        
+        
+	<img src="http://127.0.0.1/nickberens/_site/img/css.png" width="165" height="165" alt=""/>
 		
         
         	
-  <h1>Posts Tagged &ldquo;CSS&rdquo;</h1>
+  
 	
 	<article class="article-index wrap">
 
-
+		<h1 id="fittext1">Posts Tagged &ldquo;CSS&rdquo;</h1>
 			<ul class="article-roll">
         
        
@@ -100,8 +104,12 @@ input[type='submit']
         
         
         
+        
+        
+        
+        
        <li>   
-        <span class="post-date">30 Nov, 2013</span> <a href="http://nickberens.me/2013/11/30/full-height.html"><img src="http://nickberens.me/img/css.png" width="50" height="50" alt=""/><span class="post-title">100% Height &amp; Vertically Centered<span></a>
+        <span class="post-date">30 Nov, 2013</span> <a href="http://127.0.0.1/nickberens/_site/2013/11/30/full-height.html"><img src="http://127.0.0.1/nickberens/_site/img/css.png" width="50" height="50" alt=""/><span class="post-title">100% Height &amp; Vertically Centered<span></a>
 				
       </li>
                 <!--<p class="summary">Summary: </p>
@@ -127,19 +135,13 @@ input[type='submit']
 
 
 
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>--> 
-<script>window.jQuery || document.write('<script src="http://nickberens.me/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
-<script type='text/javascript' src="http://nickberens.me/js/validation.js"></script>
-<script src="http://nickberens.me/js/main.js"></script> 
-<style>
-@media (max-height: 445px){
-.about.size, .contact.size, .work.size{
-	padding:75px 0;
-}
-.details.size {
-	min-height:600px !important;
-}
-}
-</style>
+<script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
+<script src="http://127.0.0.1/nickberens/_site/js/main.js"></script> 
+<script src="http://127.0.0.1/nickberens/_site/js/fittext.js"></script>
+<script type="text/javascript">
+				$("#fittext1").fitText();
+				$("#fittext2").fitText(1.2);
+				$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+</script>
 </body>
 </html>
