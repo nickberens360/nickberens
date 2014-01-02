@@ -1,6 +1,35 @@
 //Make section heights = to viewport height
 $( document ).ready(function() {
 	
+
+
+
+
+//Wrap full list of articles to be hidden
+
+$( ".article-roll li" ).slice( 1 ).wrapAll( "<div class='article-remainder' />");
+
+$('#blog .more').click(function(){
+    $('.article-remainder').slideToggle('fast');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var size =  $(window).height(); 
 $('.details').css('height', size);
 
@@ -44,58 +73,14 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 var details = $('#details');
 var cases = $('#cases');
-/*var first = $('#first');
-var second = $('#second');
-var third = $('#third');
-var fourth = $('#fourth');
-var fifth = $('#fifth');
-var sixth = $('#sixth');*/
 
-$('#one').click(function(){ 
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #first"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
+
+$('.mylinks').click(function(e){
+    e.preventDefault();	
+		details.css('display','table');	
+		cases.load($(this).prop("href")); 
+		$('html, body').animate({scrollTop: details.offset().top}, .5); 
 });
-
-$('#two').click(function(){
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #second"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
-});
-
-$('#three').click(function(){
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #third"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
-});
-
-$('#four').click(function(){
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #fourth"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
-});
-
-$('#five').click(function(){	
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #fifth"); 
-	$('html, body').animate({scrollTop: details.offset().top}, .5);
-});
-
-$('#six').click(function(){
-	
-	details.css('display','table');
-	cases.load("ajax/case.txt #sixth");
-	$('html, body').animate({scrollTop: details.offset().top}, .5); 
-});
-
-
-
-
 //Closes overlay
 $('#details .clse').click(function(){
 	details.slideToggle('fast');
@@ -104,12 +89,21 @@ $('#details .clse').click(function(){
 });
 
 
-/*$(window).scroll(function() {
-  details.css('display','none');
 
-	
-});
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
