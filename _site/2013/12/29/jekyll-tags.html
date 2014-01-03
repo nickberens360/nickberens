@@ -20,11 +20,13 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://127.0.0.1/nickberens/_site/css/main.css" type="text/css" />
+<!--<link rel="stylesheet" type="text/css" href="http://127.0.0.1/nickberens/_site/css/prism.css">-->
 <!--[if lt IE 9]><link rel="stylesheet" media="all" href="css/style-ie.css"/><![endif]-->
 <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
+<script src="http://127.0.0.1/nickberens/_site/js/prism.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,7 +75,7 @@
 
 <p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
 
-<p><code class="block">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/">&lt;/a&gt;</code>&#123;% endfor %}</code></p>
+<p><code class="block simple">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/">&lt;/a&gt;</code>&#123;% endfor %}</code></p>
 
 <p>Simple, sort of.</p>
 

@@ -1,4 +1,4 @@
-code{
+code.simple{
 	background:#D7D7D7;
 	padding:5px 10px;
 	border-radius:3px;
@@ -6,6 +6,6 @@ code{
 code.block{
 	display:block;
 }
-.intro code{
+.intro code.simple{
 	font-size:.85em;
 }

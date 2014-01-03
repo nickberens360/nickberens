@@ -14,7 +14,7 @@ tags:
 
 <p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
 
-<p><code class="block">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/{{ tag }}">{{ tag }}&lt;/a&gt;</code>&#123;% endfor %}</code></p>
+<p><code class="block simple">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/{{ tag }}">{{ tag }}&lt;/a&gt;</code>&#123;% endfor %}</code></p>
 
 <p>Simple, sort of.</p>
 

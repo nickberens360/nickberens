@@ -19,8 +19,11 @@ tags:
 		padding: 2px 9px;
 		cursor:pointer;
 	}
+	.toggle-txt-ex{
+		margin-bottom:40px;
+	}
 </style>
-<p class="intro">When showing and hiding additional content when a button is clicked, it is often helpful to change the text of that button</p>
+<p class="intro">Showing and hiding additional content when a button is clicked, it is often helpful to change the text of that button</p>
 
 <p>I've stumbled upon a few different ways to achieve this, I rather enjoy this one.</p>
 
@@ -28,13 +31,29 @@ tags:
 <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s... <span class="additional-content">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span> <span class="btn">More</span></p>
 </div>
 
-<script>
 
+<pre class="line-numbers"><code class="language-javascript">
+//Toggle extra content
 $('.toggle-txt-ex .btn').click(function(){
     $('.additional-content').slideToggle('fast');
-
 });
+//Toggle btn text
+$(function(){
+   $(".btn").click(function () {
+      $(this).text(function(i, text){
+          return text === "Less" ? "More" : "Less";
+      })
+   });
+})
+</code></pre>
 
+
+<script>
+//Toggle extra content
+$('.toggle-txt-ex .btn').click(function(){
+    $('.additional-content').slideToggle('fast');
+});
+//Toggle btn text
 $(function(){
    $(".btn").click(function () {
       $(this).text(function(i, text){
