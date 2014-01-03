@@ -631,10 +631,9 @@ input[type="submit"].btns:active {
 /* line 11, ../sass/modules/_article-index.scss */
 .article-index li {
   margin-bottom: 5px;
-  padding: 0 10px;
 }
 
-/* line 15, ../sass/modules/_article-index.scss */
+/* line 14, ../sass/modules/_article-index.scss */
 .article-index li a {
   color: rgba(84, 145, 252, 0.9);
   font-size: 15px;
@@ -646,12 +645,12 @@ input[type="submit"].btns:active {
   border-left: 5px solid rgba(84, 145, 252, 0.9);
 }
 
-/* line 25, ../sass/modules/_article-index.scss */
+/* line 24, ../sass/modules/_article-index.scss */
 .article-index [class*='colspan-'] {
   float: none;
 }
 
-/* line 28, ../sass/modules/_article-index.scss */
+/* line 27, ../sass/modules/_article-index.scss */
 .article-index .post-date {
   display: block;
   background: #fff;
@@ -661,31 +660,32 @@ input[type="submit"].btns:active {
   border-left: 5px solid rgba(84, 145, 252, 0.9);
 }
 
-/* line 36, ../sass/modules/_article-index.scss */
+/* line 35, ../sass/modules/_article-index.scss */
 .post-title {
   position: relative;
   top: -6px;
 }
 
-/* line 40, ../sass/modules/_article-index.scss */
+/* line 39, ../sass/modules/_article-index.scss */
 .article-index img {
   display: none;
 }
 
-/* line 46, ../sass/modules/_article-index.scss */
+/* line 45, ../sass/modules/_article-index.scss */
 .article-remainder {
   display: none;
 }
 
-/* line 50, ../sass/modules/_article-index.scss */
+/* line 49, ../sass/modules/_article-index.scss */
 .more {
-  background: #F8AB08;
+  background: #B674C7;
   color: #fff;
   padding: 10px 20px;
   display: inline-block;
   cursor: pointer;
-  margin-top: 20px;
   font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 718px) {
@@ -728,7 +728,7 @@ input[type="submit"].btns:active {
     float: right;
     position: relative;
     top: 18px;
-    background: #727272;
+    background: #C4C4C4;
     color: #fff;
     border: none;
   }

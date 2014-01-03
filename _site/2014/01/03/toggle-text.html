@@ -24,6 +24,7 @@
 <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -58,177 +59,52 @@
 
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="http://127.0.0.1/nickberens/_site/img/css.png" width="166" height="166" alt=""/>
+	<img src="http://127.0.0.1/nickberens/_site/img/jquery.png" width="166" height="166" alt=""/>
   
 	<article class="wrap">
-	<h1 id="fittext1">Simple Responsive Grid</h1>
-	<span class="single-date">Jan 01, 2014</span>
-	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/CSS">CSS</a></span>
-	<style>
-[class*='colspan-'] {
-	position:relative;
- 	 float: left;
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;
-	margin-bottom:0;
-	border:1px solid white;
-	background:#D1D1D1;
-  text-align:center;
-}
+	<h1 id="fittext1">Toggle Button Text onClick</h1>
+	<span class="single-date">Jan 03, 2014</span>
+	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/jQuery">jQuery</a></span>
+	<style type="text/css">
+	.additional-content{
+		display:none;
+	}
+	.content{
+		padding:10px 20px;
+		background:#DFDFDF;
+	}
+	.btn{
+		color: white;
+		background: rgb(114, 155, 243);
+		padding: 2px 9px;
+		cursor:pointer;
+	}
 </style>
+<p class="intro">When showing and hiding additional content when a button is clicked, it is often helpful to change the text of that button</p>
+
+<p>I've stumbled upon a few different ways to achieve this, I rather enjoy this one.</p>
+
+<div class="toggle-txt-ex">
+<p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s... <span class="additional-content">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span> <span class="btn">More</span></p>
+</div>
+
+<script>
+
+$('.toggle-txt-ex .btn').click(function(){
+    $('.additional-content').slideToggle('fast');
+
+});
+
+$(function(){
+   $(".btn").click(function () {
+      $(this).text(function(i, text){
+          return text === "Less" ? "More" : "Less";
+      })
+   });
+})
+</script>
 
 
-<div class="grid-row">
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-3">
-		3
-	</div>
-	<div class="colspan-3">
-		3
-	</div>
-	<div class="colspan-3">
-		3
-	</div>
-	<div class="colspan-3">
-		3
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-4">
-		4
-	</div>
-	<div class="colspan-4">
-		4
-	</div>
-	<div class="colspan-4">
-		4
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-5">
-		5
-	</div>
-	<div class="colspan-7">
-		7
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-6">
-		6
-	</div>
-	<div class="colspan-6">
-		6
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-7">
-		7
-	</div>
-	<div class="colspan-5">
-		5
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-8">
-		8
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-9">
-		9
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-10">
-		10
-	</div>
-	<div class="colspan-2">
-		2
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-11">
-		11
-	</div>
-	<div class="colspan-1">
-		1
-	</div>
-</div>
-<div class="grid-row">
-	<div class="colspan-12">
-		12
-	</div>
-</div>
 	</article>
 
 <!-- <p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2013/12/29/jekyll-tags.html" title="Previous Post: Jekyll Post Tags">left</a> 	    </p> -->
@@ -258,7 +134,7 @@
 
 
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>--> 
-<script>window.jQuery || document.write('<script src="http://127.0.0.1/nickberens/_site/js/vendor/jquery-1.8.1.min.js"><\/script>')</script> 
+
 <script src="http://127.0.0.1/nickberens/_site/js/main.js"></script> 
 <script src="http://127.0.0.1/nickberens/_site/js/fittext.js"></script>
 <script type="text/javascript">

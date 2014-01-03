@@ -11,14 +11,16 @@ $( ".article-roll li" ).slice( 4 ).wrapAll( "<div class='article-remainder' />")
 
 $('#blog .more').click(function(){
     $('.article-remainder').slideToggle('fast');
+
 });
 
-
-
-
-
-
-
+$(function(){
+   $(".more").click(function () {
+      $(this).text(function(i, text){
+          return text === "Less" ? "More" : "Less";
+      })
+   });
+})
 
 
 

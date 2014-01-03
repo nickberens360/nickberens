@@ -10,7 +10,6 @@ background:#fff;
 }
 .article-index li{
   margin-bottom: 5px;
-	padding: 0 10px;
 }
 .article-index li a{
 	color: rgba(84, 145, 252, 0.9);
@@ -48,13 +47,14 @@ background:#fff;
 }
 
 .more{
-	background: #F8AB08;
+	background: #B674C7;
 	color: #fff;
 	padding: 10px 20px;
 	display: inline-block;
 	cursor: pointer;
-	margin-top: 20px;
 	font-size: 1.2rem;
+	width:100%;
+	text-align:center;
 }
 
 
@@ -90,7 +90,7 @@ margin-left:10px;
 	float:right;
 	position:relative;
 	top:18px;
-	background: #727272;
+	background: #C4C4C4;
 	color:#fff;
 	border:none;
 }
