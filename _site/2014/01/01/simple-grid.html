@@ -58,28 +58,180 @@
 
 <section id="single" class="blog single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="http://127.0.0.1/nickberens/_site/img/jekyll.png" width="166" height="166" alt=""/>
+	<img src="http://127.0.0.1/nickberens/_site/img/css.png" width="166" height="166" alt=""/>
   
 	<article class="wrap">
-	<h1 id="fittext1">Jekyll Post Tags</h1>
-	<span class="single-date">Dec 29, 2013</span>
-	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/jekyll">jekyll</a></span>
-	<p class="intro">Jekyll kind of sort of supports post tags. You have to fill in the blanks if want to be able to have tags in posts and link to the corresponding tag archive page.</p>
+	<h1 id="fittext1">Simple Responsive Grid</h1>
+	<span class="single-date">Jan 01, 2014</span>
+	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/CSS">CSS</a></span>
+	<style>
+[class*='colspan-'] {
+	position:relative;
+ 	 float: left;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	margin-bottom:0;
+	border:1px solid white;
+	background:#D1D1D1;
+  text-align:center;
+}
+</style>
 
-<p>I am by no means an expert on the subject of Jekyll. I hacked this site together leaning heavily on Google.</p>
 
-<p>Fortunately Charlie Park wrote a great <a href="http://charliepark.org/tags-in-jekyll/">article</a> on how to create a plugin on how to accomplish this. The only problem is he left out how to display the tags on the post and the link to the tag archive page.</p>
-
-<p>I won't go through steps to create the plugin, you can read Charlie's <a href="http://charliepark.org/tags-in-jekyll/">article</a> for that. Here is the missing line you will need to add to your posts template:</p>
-
-<p><code class="block">&#123;% for tag in page.tags %}<code>&lt;a class="tag-link" href="&#123;&#123; site.url }}/tag/">&lt;/a&gt;</code>&#123;% endfor %}</code></p>
-
-<p>Simple, sort of.</p>
-
-
+<div class="grid-row">
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-3">
+		3
+	</div>
+	<div class="colspan-3">
+		3
+	</div>
+	<div class="colspan-3">
+		3
+	</div>
+	<div class="colspan-3">
+		3
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-4">
+		4
+	</div>
+	<div class="colspan-4">
+		4
+	</div>
+	<div class="colspan-4">
+		4
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-5">
+		5
+	</div>
+	<div class="colspan-7">
+		7
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-6">
+		6
+	</div>
+	<div class="colspan-6">
+		6
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-7">
+		7
+	</div>
+	<div class="colspan-5">
+		5
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-8">
+		8
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-9">
+		9
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-10">
+		10
+	</div>
+	<div class="colspan-2">
+		2
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-11">
+		11
+	</div>
+	<div class="colspan-1">
+		1
+	</div>
+</div>
+<div class="grid-row">
+	<div class="colspan-12">
+		12
+	</div>
+</div>
 	</article>
 
-<!-- <p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2013/12/28/test.html" title="Previous Post: List Wordpress Child Pages in Sidebar">left</a> 	    	<a href="http://127.0.0.1/nickberens/_site/2014/01/01/simple-grid.html" title="Next Post: Simple Responsive Grid">right</a> 	 </p> -->
+<!-- <p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2013/12/29/jekyll-tags.html" title="Previous Post: Jekyll Post Tags">left</a> 	    </p> -->
 
     <div class="comments wrap">
 <div id="disqus_thread"></div>

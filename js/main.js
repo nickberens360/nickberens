@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
 //Wrap full list of articles to be hidden
 
-$( ".article-roll li" ).slice( 1 ).wrapAll( "<div class='article-remainder' />");
+$( ".article-roll li" ).slice( 4 ).wrapAll( "<div class='article-remainder' />");
 
 $('#blog .more').click(function(){
     $('.article-remainder').slideToggle('fast');
