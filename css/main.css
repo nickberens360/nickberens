@@ -699,9 +699,10 @@ input[type="submit"].btns:active {
   .article-index li a {
     text-align: left;
     border: none;
+    padding-bottom: 10px;
   }
 
-  /* line 75, ../sass/modules/_article-index.scss */
+  /* line 76, ../sass/modules/_article-index.scss */
   .article-index img {
     display: inline;
     position: relative;
@@ -711,14 +712,14 @@ input[type="submit"].btns:active {
     margin-bottom: 0;
   }
 
-  /* line 83, ../sass/modules/_article-index.scss */
+  /* line 84, ../sass/modules/_article-index.scss */
   .post-title {
     position: relative;
     top: -10px;
     margin-left: 10px;
   }
 
-  /* line 88, ../sass/modules/_article-index.scss */
+  /* line 89, ../sass/modules/_article-index.scss */
   .article-index .post-date {
     display: inline-block;
     float: right;
@@ -1208,8 +1209,13 @@ h2 {
   font-size: 2.4rem;
 }
 
+/* line 19, ../sass/_type.scss */
+.single h1 {
+  text-transform: capitalize;
+}
+
 @media (min-width: 618px) {
-  /* line 20, ../sass/_type.scss */
+  /* line 23, ../sass/_type.scss */
   html {
     font-size: 80.5%;
   }
