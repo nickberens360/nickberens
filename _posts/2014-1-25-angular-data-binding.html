@@ -1,0 +1,31 @@
+---
+layout: post-image
+title: Angularjs data binding
+image-circle: angular.png
+image: village.jpg
+tags:
+- Angularjs
+---
+
+
+<p class="intro">I've been intrigued by <a href="http://angularjs.org/">Angularjs</a> for some time now. I just recently started digging into it. The following is the obligitory data binding example.</p>
+
+<article ng-app = "app">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+<script type="text/javascript">
+angular.module('app', []).
+ config(function ($interpolateProvider) {
+    $interpolateProvider.startSymbol('<[');
+    $interpolateProvider.endSymbol(']>');
+ });
+</script>
+	<input type="text" ng-model="yourName" placeholder="Enter a name here">
+	<h1 class="fittext2 red">Hello <[yourName]>!</h1>
+
+</article>
+
+<h2>The Code</h2>
+
+<div class="gist shadow">
+	<script src="https://gist.github.com/nickberens360/8617146.js"></script>
+</div>

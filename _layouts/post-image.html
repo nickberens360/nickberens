@@ -68,7 +68,7 @@ layout: post-image
 	<img src="{{ site.url }}/img/{{page.image-circle}}" width="166" height="166" alt=""/>
   
 	<article class="wrap">
-	<h1 id="fittext2">{{page.title}}</h1>
+	<h1 class="fittext2">{{page.title}}</h1>
 	<span class="single-date">{{ page.date | date: "%b %d, %Y" }}</span>
 	<span class="tags">{% for tag in page.tags %}<a class="tag-link" href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>
 	{{content}}
@@ -106,7 +106,7 @@ layout: post-image
 <script src="{{ site.url }}/js/fittext.js"></script>
 <script type="text/javascript">
 				$("#fittext1").fitText();
-				$("#fittext2").fitText(1.2);
+				$(".fittext2").fitText(1.2);
 				$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 </script>
 </body>

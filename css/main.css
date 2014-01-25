@@ -139,36 +139,54 @@ section {
   margin-bottom: 0;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
+.single a {
+  color: #E95757;
+}
+
+/* line 34, ../sass/_base.scss */
+.single a:hover {
+  color: #E95757;
+  text-decoration: underline;
+}
+
+/* line 38, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
 a:-webkit-any-link {
   text-decoration: none;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 39, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 ul li {
   list-style: none;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 12px 0px inset;
+}
+
+/* line 59, ../sass/_base.scss */
+input[type="text"] {
+  width: 100%;
+  padding: 18px 5px;
+  font-size: 20px;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -564,7 +582,7 @@ input[type="submit"].btns:active {
 }
 
 /* line 14, ../sass/modules/_cntct-form.scss */
-.cntct-form textarea, input[type="text"] {
+.cntct-form textarea, .cntct-form input[type="text"] {
   border-radius: 0;
   width: 100%;
   padding: 10px;
@@ -724,7 +742,7 @@ input[type="submit"].btns:active {
     display: inline-block;
     float: right;
     position: relative;
-    top: 18px;
+    top: 24px;
     background: #C4C4C4;
     color: #fff;
     border: none;
@@ -6072,6 +6090,17 @@ h2 {
 /* line 4, ../sass/_helper.scss */
 pre[class*="language-"].mb {
   margin-bottom: 40px;
+}
+
+/* line 7, ../sass/_helper.scss */
+.red {
+  color: #E95B5B !important;
+}
+
+/* line 10, ../sass/_helper.scss */
+.padbt {
+  padding-bottom: 100px;
+  padding-top: 59px;
 }
 
 /**
