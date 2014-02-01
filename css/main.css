@@ -982,18 +982,17 @@ code.block {
   }
 }
 /* line 1, ../sass/layout/_about.scss */
-.about {
+#about {
   background: rgba(43, 164, 245, 0.46);
 }
 
 /* line 1, ../sass/layout/_work.scss */
-.work {
+#work {
   background: #8D8A8A;
   background-image: url(../img/grey_wash_wall.png);
-  /*padding:100px 40px;*/
 }
 
-/* line 6, ../sass/layout/_work.scss */
+/* line 5, ../sass/layout/_work.scss */
 .work-grid {
   padding-left: 40px;
   padding-right: 40px;
@@ -1002,7 +1001,7 @@ code.block {
 }
 
 @media (max-height: 700px) {
-  /* line 13, ../sass/layout/_work.scss */
+  /* line 12, ../sass/layout/_work.scss */
   .work-grid {
     margin-top: 0;
     padding-top: 0;
@@ -1031,13 +1030,13 @@ code.block {
 }
 
 /* line 1, ../sass/layout/_contact.scss */
-.contact {
+#contact {
   background: #333;
   background-image: url(../img/dark_fish_skin.png);
 }
 
 /* line 1, ../sass/layout/_blog.scss */
-.blog {
+#blog {
   background: #E9E9E9;
   background: url(../img/sos.png);
 }
@@ -6099,8 +6098,8 @@ pre[class*="language-"].mb {
 
 /* line 10, ../sass/_helper.scss */
 .padbt {
-  padding-bottom: 100px;
-  padding-top: 59px;
+  padding-bottom: 20px;
+  /*padding-top: 59px;*/
 }
 
 /**
