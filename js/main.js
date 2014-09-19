@@ -19,7 +19,6 @@ $(function(){
       $(this).text(function(i, text){
           return text === "Less" ? "More" : "Less";
       })
-      $('#blog .cell').toggleClass('padbt');
    });
 })
 
