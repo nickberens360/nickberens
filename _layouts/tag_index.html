@@ -67,7 +67,7 @@ input[type='submit']
 
 <section id="single" class="blog single tag-index size animated fadeIn"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-		{% for post in site.posts limit: 4 %}
+		{% for post in site.posts limit: 1 %}
         {% for tag in post.tags %}
         {% if tag == page.tag %}
 	<img src="{{ site.url }}/img/{{post.image-circle}}" width="165" height="165" alt=""/>
