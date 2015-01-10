@@ -24,7 +24,9 @@ $(function(){
 
 
 
-
+$( '.menu-toggle' ).click(function() {
+	$(this).toggleClass('toggle-open');
+});
 
 
 
