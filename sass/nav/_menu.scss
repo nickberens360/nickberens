@@ -17,8 +17,50 @@
 	border: 2px solid rgba(255, 255, 255, 0.7);
 	display: block;
 	width: 100%;
-margin-bottom: 5px;
+	margin-bottom: 5px;
+	-webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all .75s;
+  transition: all .75;
 }
+
+
+
+.menu-toggle.toggle-open .toggle-f {
+  display: none;
+}
+
+.menu-toggle.toggle-open .toggle-m {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.menu-toggle.toggle-open .toggle-l {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-container{
 	position:fixed;
 	z-index: 500;

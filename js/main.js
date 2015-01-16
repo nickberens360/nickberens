@@ -24,7 +24,9 @@ $(function(){
 
 
 
-
+//$( '.menu-toggle' ).click(function() {
+//	$(this).toggleClass('toggle-open');
+//});
 
 
 
@@ -45,10 +47,12 @@ $(window).resize(function() {
 //Menu toggle
 $('.menu-toggle').click(function(){
 	$('.menu').slideToggle('fast');
+	$(this).toggleClass('toggle-open');
 });
 
 $('.menu li a').click(function(){
 	$('.menu').slideToggle('fast');
+	$('.menu-toggle').removeClass('toggle-open');
 });
 
 //Smooth scroll

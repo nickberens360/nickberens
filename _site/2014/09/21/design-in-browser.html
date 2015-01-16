@@ -61,41 +61,30 @@
 
 <section class="single size"> <a href="#work" class="arrows up dark"></a>
 	<div class="cell">
-	<img src="http://127.0.0.1/nickberens/_site/img/wp.png" width="166" height="166" alt=""/>
+	<img src="http://127.0.0.1/nickberens/_site/img/jquery.png" width="166" height="166" alt=""/>
   
 	<article class="wrap">
-	<h1 class="fittext2">List Wordpress Child Pages in Sidebar</h1>
-	<span class="single-date">Dec 28, 2013</span>
-	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/WordPress">WordPress</a></span>
-	<p class="intro">I love this snippet so much. It's a quick way of displaying child pages of a parent page in the sidebar of a WordPress theme.</p>
+	<h1 class="fittext2">Designing in the browser</h1>
+	<span class="single-date">Sep 21, 2014</span>
+	<span class="tags"><a class="tag-link" href="http://127.0.0.1/nickberens/_site/tag/jQuery">jQuery</a></span>
+	<p class="intro">So I recently had the opportunity to redesign our company's website <a href="http://www.wisnet.com/">wisnet.com</a>. I decided to skip photoshop and jump right into the browser.</p>
 
-<p>I wish I could take credit for it, but my strength lies in copying and pasting the work of others. I found the original code here: <a href="http://thomasgriffinmedia.com/blog/2011/01/how-to-list-child-pages-in-your-wordpress-sidebar-and-pages/" target="_blank">Thomas Griffin Media</a></p>
+<h2>An HTML Sketch</h2>
 
-<!--<div class="gist">
-<script src="https://gist.github.com/nickberens360/8152388.js"></script>
+<h2>Iterate Faster</h2>
+
+<h2>Difficult to properly architect proper CSS</h2>
+
+
+
+<div>
 </div>
--->
-
-<pre class="line-numbers shadow"><code class="language-php">
-global $post; // Setup the global variable $post
-if ( is_page() && $post->post_parent ) // Make sure we are on a page and that the page is a parent
-	$kiddies = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
-else
-	$kiddies = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
- 
-if ( $kiddies ) {
-	echo '<ul class="secondary">';
-		echo $kiddies;
-	echo '</ul>';
-}
-
-</code></pre>
 
 
 
 	</article>
 
-<!-- <p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2013/12/27/git-alias.html" title="Previous Post: Git Alias">left</a> 	    	<a href="http://127.0.0.1/nickberens/_site/2013/12/29/jekyll-tags.html" title="Next Post: Jekyll Post Tags">right</a> 	 </p> -->
+<!-- <p class="pull-right"> <a href="http://127.0.0.1/nickberens/_site/2014/01/25/angular-data-binding.html" title="Previous Post: Angularjs data binding">left</a> 	    	<a href="http://127.0.0.1/nickberens/_site/2014/12/14/hamburger-toggle.html" title="Next Post: Hamburger Toggle">right</a> 	 </p> -->
 
     <div class="comments wrap">
 <div id="disqus_thread"></div>
